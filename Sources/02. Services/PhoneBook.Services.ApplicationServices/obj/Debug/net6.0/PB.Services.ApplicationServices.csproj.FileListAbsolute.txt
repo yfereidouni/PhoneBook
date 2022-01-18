@@ -1,0 +1,17 @@
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Services.ApplicationServices.deps.json
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\ref\PB.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Services.ApplicationServices.pdb
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Core.Contracts.pdb
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\bin\Debug\net6.0\PB.Core.Entities.pdb
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.AssemblyInfo.cs
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.csproj.CopyComplete
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\ref\PB.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\02. Services\PB.Services.ApplicationServices\obj\Debug\net6.0\PB.Services.ApplicationServices.pdb

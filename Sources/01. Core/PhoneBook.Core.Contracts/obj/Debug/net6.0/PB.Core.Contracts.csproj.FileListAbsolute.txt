@@ -1,0 +1,15 @@
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\PB.Core.Contracts.deps.json
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\PB.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\ref\PB.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\PB.Core.Contracts.pdb
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\PB.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\bin\Debug\net6.0\PB.Core.Entities.pdb
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.AssemblyInfoInputs.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.AssemblyInfo.cs
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.csproj.CopyComplete
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\ref\PB.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PB\Sources\01. Core\PB.Core.Contracts\obj\Debug\net6.0\PB.Core.Contracts.pdb

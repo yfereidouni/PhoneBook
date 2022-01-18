@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cd2c7643-f9b2-4cb4-bc09-d373ef2e5289": {
+      "ProjectGuid": "cd2c7643-f9b2-4cb4-bc09-d373ef2e5289",
+      "DisplayName": "PB.Endpoints.UI.MVC",
+      "ColorIndex": 0
+    }
+  },
+  "NextColorIndex": 1
+}

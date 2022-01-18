@@ -1,0 +1,14 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01. Core\PhoneBook.Core.Contracts\PhoneBook.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\01. Core\PhoneBook.Core.Entities\PhoneBook.Core.Entities.csproj" />
+  </ItemGroup>
+
+</Project>

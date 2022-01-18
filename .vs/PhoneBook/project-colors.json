@@ -1,0 +1,26 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "cd2c7643-f9b2-4cb4-bc09-d373ef2e5289": {
+      "ProjectGuid": "cd2c7643-f9b2-4cb4-bc09-d373ef2e5289",
+      "DisplayName": "PhoneBook.Endpoints.UI.MVC",
+      "ColorIndex": 0
+    },
+    "aa20f729-d961-4be5-a021-13ffa188d2a7": {
+      "ProjectGuid": "aa20f729-d961-4be5-a021-13ffa188d2a7",
+      "DisplayName": "PhoneBook.Core.Entities",
+      "ColorIndex": 1
+    },
+    "b44c25b5-8722-488c-951c-91dd7cbbb9af": {
+      "ProjectGuid": "b44c25b5-8722-488c-951c-91dd7cbbb9af",
+      "DisplayName": "PhoneBook.Infrastructures.DAL.EF",
+      "ColorIndex": 2
+    },
+    "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3": {
+      "ProjectGuid": "a2fe74e1-b743-11d0-ae1a-00a0c90fffc3",
+      "DisplayName": "Miscellaneous Files",
+      "ColorIndex": -1
+    }
+  },
+  "NextColorIndex": 3
+}

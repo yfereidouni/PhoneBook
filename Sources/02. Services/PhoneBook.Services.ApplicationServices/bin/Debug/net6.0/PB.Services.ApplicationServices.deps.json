@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PB.Services.ApplicationServices/1.0.0": {
+        "dependencies": {
+          "PB.Core.Contracts": "1.0.0",
+          "PB.Core.Entities": "1.0.0"
+        },
+        "runtime": {
+          "PB.Services.ApplicationServices.dll": {}
+        }
+      },
+      "PB.Core.Contracts/1.0.0": {
+        "dependencies": {
+          "PB.Core.Entities": "1.0.0"
+        },
+        "runtime": {
+          "PB.Core.Contracts.dll": {}
+        }
+      },
+      "PB.Core.Entities/1.0.0": {
+        "runtime": {
+          "PB.Core.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PB.Services.ApplicationServices/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PB.Core.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PB.Core.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

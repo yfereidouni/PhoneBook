@@ -1,0 +1,50 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v6.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v6.0": {
+      "PhoneBook.Infrastructures.DAL.Fake/1.0.0": {
+        "dependencies": {
+          "PhoneBook.Core.Contracts": "1.0.0",
+          "PhoneBook.Core.Entities": "1.0.0"
+        },
+        "runtime": {
+          "PhoneBook.Infrastructures.DAL.Fake.dll": {}
+        }
+      },
+      "PhoneBook.Core.Contracts/1.0.0": {
+        "dependencies": {
+          "PhoneBook.Core.Entities": "1.0.0"
+        },
+        "runtime": {
+          "PhoneBook.Core.Contracts.dll": {}
+        }
+      },
+      "PhoneBook.Core.Entities/1.0.0": {
+        "runtime": {
+          "PhoneBook.Core.Entities.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "PhoneBook.Infrastructures.DAL.Fake/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PhoneBook.Core.Contracts/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "PhoneBook.Core.Entities/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

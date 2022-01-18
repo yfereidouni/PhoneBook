@@ -1,0 +1,51 @@
+﻿@model PB.Endpoints.UI.MVC.Models.Contacts.AddNewContactDisplayViewModel
+@{
+    
+}
+@section head
+{
+    <link href="~/vendor/select2/dist/css/select2.min.css" rel="stylesheet" />
+}
+<form asp-controller="Contact" asp-action="Add" method="post" enctype="text/plain">
+    <div asp-validation-summary="All"></div>
+    <div class="form-group">
+        <label asp-for="FirstName">First Name</label>
+        <input type="text" asp-for="FirstName" class="form-control" maxlength="50" />
+        <span asp-validation-for="FirstName"></span>
+    </div>
+        <div class="form-group">
+        <label asp-for="MiddleName">Middle Name</label>
+        <input type="text" asp-for="MiddleName" class="form-control" maxlength="50" />
+        <span asp-validation-for="MiddleName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="LastName">Last Name</label>
+        <input type="text" asp-for="LastName" class="form-control" maxlength="50" />
+        <span asp-validation-for="LastName"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="TagsForDisplay">Tag</label>
+        <select class="form-control select2" name="SelectedTag" asp-for="TagsForDisplay" multiple>
+            @foreach (var item in Model.TagsForDisplay)
+            {
+                <option value="@item.Id">@item.Name</option>
+            }
+        </select>
+    </div>
+    @*<div class="form-group">*@
+    @*<button type="button" class="btn btn-secondary" asp-controller="People" asp-action="Index">Cancel</button>*@
+    <input type="button" class="btn btn-secondary" value="Cancel" onclick="@("window.location.href='" + @Url.Action("Index", "Contact") + "'");" />
+    <input type="submit" class="btn btn-success" value="Save" />
+    @*</div>*@
+</form>
+
+@section scripts
+{
+    <script src="~/vendor/select2/dist/js/select2.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.select2').select2();
+
+        });
+    </script>
+}
