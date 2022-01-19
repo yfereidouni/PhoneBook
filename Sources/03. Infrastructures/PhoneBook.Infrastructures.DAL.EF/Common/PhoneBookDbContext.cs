@@ -26,8 +26,8 @@ public class PhoneBookDbContext : DbContext
 
     protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
     {
-        //Use: PBdbContextFactory
-        //optionsBuilder.UseSqlServer("server=.;initial catalog=PBdb;Integrated Security=True;");
+        //Use: PhoneBookDbContextFactory
+        //optionsBuilder.UseSqlServer("server=.;initial catalog=PhoneBook_DB;Integrated Security=True;");
         base.OnConfiguring(optionsBuilder);
     }
 

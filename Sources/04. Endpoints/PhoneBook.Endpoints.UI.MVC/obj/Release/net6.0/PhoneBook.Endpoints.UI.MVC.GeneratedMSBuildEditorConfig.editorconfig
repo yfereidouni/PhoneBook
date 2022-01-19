@@ -1,0 +1,64 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = PhoneBook.Endpoints.UI.MVC
+build_property.RootNamespace = PhoneBook.Endpoints.UI.MVC
+build_property.ProjectDir = C:\Users\yasser.fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\
+build_property.RazorLangVersion = 6.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = C:\Users\yasser.fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC
+build_property._RazorSourceGeneratorDebug = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Contact/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Contact/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_ContentWrapper.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Db250ZW50V3JhcHBlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_Footer.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Gb290ZXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_LogoutModal.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dvdXRNb2RhbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_ScrollToTop.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TY3JvbGxUb1RvcC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_Sidebar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9TaWRlYmFyLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_Topbar.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Ub3BiYXIuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/yasser.fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 

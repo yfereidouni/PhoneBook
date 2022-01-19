@@ -1,20 +1,23 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj": {}
+    "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj": {
+    "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj",
+        "projectUniqueName": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj",
         "projectName": "PhoneBook.Core.Contracts.Test",
-        "projectPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj",
-        "packagesPath": "C:\\Users\\Fereidouni\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\obj\\",
+        "projectPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\PhoneBook.Core.Contracts.Test.csproj",
+        "packagesPath": "C:\\Users\\yasser.fereidouni\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Tests\\01. Core\\PhoneBook.Core.Contracts.Test\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Fereidouni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\yasser.fereidouni\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -76,7 +79,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -16,7 +16,10 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     MiddleName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
-                    LastName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false)
+                    LastName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
+                    Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
+                    MyProperty = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {

@@ -12,7 +12,7 @@ namespace PB.Infrastructures.DAL.EF.Phones;
 
 public class PhoneRepository : BaseEntityRepository<Phone>, IPhoneRepository
 {
-    public PhoneRepository(PhoneBookDbContext pBDB) : base(pBDB)
+    public PhoneRepository(PhoneBookDbContext phoneBookDbContext) : base(phoneBookDbContext)
     {
     }
 }

@@ -11,7 +11,7 @@ namespace PB.Infrastructures.DAL.EF.Tags;
 
 public class TagRepository : BaseEntityRepository<Tag>, ITagRepository
 {
-    public TagRepository(PhoneBookDbContext pBDB) : base(pBDB)
+    public TagRepository(PhoneBookDbContext phoneBookDbContext) : base(phoneBookDbContext)
     {
     }
 }

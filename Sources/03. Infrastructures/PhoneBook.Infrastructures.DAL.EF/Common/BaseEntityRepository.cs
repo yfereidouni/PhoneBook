@@ -10,36 +10,36 @@ namespace PB.Infrastructures.DAL.EF.Common;
 
 public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEntity> where TEntity : BaseEntity, new()
 {
-    private readonly PhoneBookDbContext pBDB;
+    private readonly PhoneBookDbContext phoneBookDbContext;
 
-    public BaseEntityRepository(PhoneBookDbContext pBDB)
+    public BaseEntityRepository(PhoneBookDbContext phoneBookDbContext)
     {
-        this.pBDB = pBDB;
+        this.phoneBookDbContext = phoneBookDbContext;
     }
     public void Add(TEntity entity)
     {
-        pBDB.Set<TEntity>().Add(entity);
-        pBDB.SaveChanges();
+        phoneBookDbContext.Set<TEntity>().Add(entity);
+        phoneBookDbContext.SaveChanges();
     }
 
     public void Delete(TEntity entity)
     {
-        pBDB.Set<TEntity>().Remove(entity);
-        pBDB.SaveChanges();
+        phoneBookDbContext.Set<TEntity>().Remove(entity);
+        phoneBookDbContext.SaveChanges();
     }
 
     public TEntity FindById(int id)
     {
-        return pBDB.Set<TEntity>().Find(id);
+        return phoneBookDbContext.Set<TEntity>().Find(id);
     }
 
     public IQueryable<TEntity> GetAll()
     {
-        return pBDB.Set<TEntity>().AsQueryable();
+        return phoneBookDbContext.Set<TEntity>().AsQueryable();
     }
 
     public void Update(TEntity entity)
     {
-        pBDB.Set<TEntity>().Update(entity);
+        phoneBookDbContext.Set<TEntity>().Update(entity);
     }
 }

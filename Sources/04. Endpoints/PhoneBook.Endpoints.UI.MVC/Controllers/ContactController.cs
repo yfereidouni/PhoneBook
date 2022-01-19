@@ -35,11 +35,12 @@ namespace PB.Endpoints.UI.MVC.Controllers
             return View(model);
         }
 
-        //[HttpPost]
-        //public IActionResult Add()
-        //{
-        //    return View();
-        //}
+        [HttpPost]
+        public IActionResult Add(AddNewContactGetViewModel model)
+        {
+
+            return RedirectToAction("Index");
+        }
 
     }
 }

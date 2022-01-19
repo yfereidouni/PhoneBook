@@ -11,7 +11,7 @@ namespace PB.Infrastructures.DAL.EF.Contacts;
 
 public class ContactRepository : BaseEntityRepository<Contact>, IContactRepository
 {
-    public ContactRepository(PhoneBookDbContext pBDB) : base(pBDB)
+    public ContactRepository(PhoneBookDbContext phoneBookDbContext) : base(phoneBookDbContext)
     {
     }
 }

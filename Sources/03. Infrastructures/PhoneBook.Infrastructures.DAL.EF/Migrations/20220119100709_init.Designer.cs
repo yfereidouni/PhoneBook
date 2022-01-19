@@ -12,7 +12,7 @@ using PB.Infrastructures.DAL.EF.Common;
 namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 {
     [DbContext(typeof(PhoneBookDbContext))]
-    [Migration("20220118175552_init")]
+    [Migration("20220119100709_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -32,10 +32,18 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
+                    b.Property<string>("Address")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("FirstName")
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
+
+                    b.Property<string>("Image")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
                         .IsRequired()
@@ -46,6 +54,9 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
+
+                    b.Property<int>("MyProperty")
+                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
