@@ -1,6 +1,7 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PB.Core.Contracts.Contacts;
 using PB.Core.Contracts.Tags;
+using PB.Core.Entities.Contacts;
 using PB.Endpoints.UI.MVC.Models.Contacts;
 
 namespace PB.Endpoints.UI.MVC.Controllers
@@ -38,6 +39,16 @@ namespace PB.Endpoints.UI.MVC.Controllers
         [HttpPost]
         public IActionResult Add(AddNewContactGetViewModel model)
         {
+            //contactRepository.Add(new Contact
+            //{
+            //    FirstName = model.FirstName,
+            //    MiddleName = model.MiddleName,
+            //    LastName = model.LastName,
+            //    Address = model.Address,
+            //    Image = model.Image,
+            //    Tags = model.SelectedTag
+
+            //}); ;
 
             return RedirectToAction("Index");
         }

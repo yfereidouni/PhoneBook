@@ -12,7 +12,6 @@ public class Contact : BaseEntity
     public string LastName { get; set; }
     public string Address { get; set; }
     public string Image { get; set; }
-    public int MyProperty { get; set; }
     public List<Phone> Phones { get; set; }
     public List<ContactTag> Tags { get; set; }
 }

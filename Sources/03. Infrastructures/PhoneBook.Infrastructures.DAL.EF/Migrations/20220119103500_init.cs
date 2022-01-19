@@ -18,8 +18,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                     MiddleName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(150)", maxLength: 150, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false),
-                    MyProperty = table.Column<int>(type: "int", nullable: false)
+                    Image = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
                 constraints: table =>
                 {

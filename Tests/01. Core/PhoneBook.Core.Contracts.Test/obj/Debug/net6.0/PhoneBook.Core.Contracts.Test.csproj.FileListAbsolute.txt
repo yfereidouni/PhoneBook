@@ -195,3 +195,4 @@ C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Tests\01. Core\PhoneBook.Core.
 C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Contracts.Test\obj\Debug\net6.0\ref\PhoneBook.Core.Contracts.Test.dll
 C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Contracts.Test\obj\Debug\net6.0\PhoneBook.Core.Contracts.Test.pdb
 C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Contracts.Test\obj\Debug\net6.0\PhoneBook.Core.Contracts.Test.genruntimeconfig.cache
+C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Contracts.Test\obj\Debug\net6.0\PhoneBook.Core.Contracts.Test.csproj.AssemblyReference.cache

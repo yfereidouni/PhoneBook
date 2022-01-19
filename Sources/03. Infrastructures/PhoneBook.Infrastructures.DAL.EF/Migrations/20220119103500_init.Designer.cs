@@ -12,7 +12,7 @@ using PB.Infrastructures.DAL.EF.Common;
 namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 {
     [DbContext(typeof(PhoneBookDbContext))]
-    [Migration("20220119100709_init")]
+    [Migration("20220119103500_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -54,9 +54,6 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .IsRequired()
                         .HasMaxLength(150)
                         .HasColumnType("nvarchar(150)");
-
-                    b.Property<int>("MyProperty")
-                        .HasColumnType("int");
 
                     b.HasKey("Id");
 
