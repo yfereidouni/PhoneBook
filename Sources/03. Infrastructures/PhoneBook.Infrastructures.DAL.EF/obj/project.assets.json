@@ -675,7 +675,7 @@
       ]
     },
     "Microsoft.CSharp/4.5.0": {
-      "sha512": "EGoBmf3Na2ppbhPePDE9PlX81r1HuOZH5twBrq7couJZiPTjUnD3648balerQJO6EJ8Sj+43+XuRwQ7r+3tE3w==",
+      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
       "type": "package",
       "path": "microsoft.csharp/4.5.0",
       "files": [
@@ -1625,7 +1625,7 @@
       ]
     },
     "System.Security.Cryptography.Cng/4.5.0": {
-      "sha512": "O4tqXxWCD8y1IU1VTgzbuBFwoRahrADhDUxHjwezhHCsqyFNyQ5EytjWBxu0EsZuH14b4UO2pFkG063K2h/9Ug==",
+      "sha512": "WG3r7EyjUe9CMPFSs6bty5doUqT+q9pbI80hlNzo2SkPkZ4VTuZkGWjpp77JB8+uaL4DFPRdBsAY+DX3dBK92A==",
       "type": "package",
       "path": "system.security.cryptography.cng/4.5.0",
       "files": [
@@ -1894,23 +1894,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\yasser.fereidouni\\.nuget\\packages\\": {},
-    "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
+    "C:\\Users\\Fereidouni\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\PhoneBook.Infrastructures.DAL.EF.csproj",
+      "projectUniqueName": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\PhoneBook.Infrastructures.DAL.EF.csproj",
       "projectName": "PhoneBook.Infrastructures.DAL.EF",
-      "projectPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\PhoneBook.Infrastructures.DAL.EF.csproj",
-      "packagesPath": "C:\\Users\\yasser.fereidouni\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\obj\\",
+      "projectPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\PhoneBook.Infrastructures.DAL.EF.csproj",
+      "packagesPath": "C:\\Users\\Fereidouni\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\03. Infrastructures\\PhoneBook.Infrastructures.DAL.EF\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
-      ],
       "configFilePaths": [
-        "C:\\Users\\yasser.fereidouni\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Fereidouni\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1924,11 +1920,11 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "projectReferences": {
-            "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj": {
-              "projectPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj"
+            "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj": {
+              "projectPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj"
             },
-            "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Entities\\PhoneBook.Core.Entities.csproj": {
-              "projectPath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Entities\\PhoneBook.Core.Entities.csproj"
+            "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Entities\\PhoneBook.Core.Entities.csproj": {
+              "projectPath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Entities\\PhoneBook.Core.Entities.csproj"
             }
           }
         }
@@ -1969,7 +1965,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

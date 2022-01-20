@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "mb+SxHsi19MHRcrfU1LwSNwaQp+j/oBSadbqA/RwFCJMxrbW0rLxc8ZZ+RHl6L/BlUhXTE0OL1hfhGdDS9zN+w==",
+  "dgSpecHash": "W0IFVpIKWVirMPw/nWsUQlzS5OVuyAy9rK2ATlWYZKg6zQaYgHKHnaMex6TGIoKkH22Y5DrlJ7lBvWbRvn8Rxg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\yasser.fereidouni\\Source\\Repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj",
+  "projectFilePath": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\01. Core\\PhoneBook.Core.Contracts\\PhoneBook.Core.Contracts.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }
