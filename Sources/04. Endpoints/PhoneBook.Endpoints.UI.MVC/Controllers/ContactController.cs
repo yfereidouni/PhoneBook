@@ -48,6 +48,7 @@ public class ContactController : Controller
                 FirstName = model.FirstName,
                 LastName = model.LastName,
                 Address = model.Address,
+                Email = model.Email,
                 Tags = new List<ContactTag>(model.SelectedTag.Select(c => new ContactTag
                 {
                     TagId = c

@@ -6,6 +6,8 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
     {
         public IActionResult Index()
         {
+            ViewBag.PageTitle = "Admin Panel";
+
             return View();
         }
         

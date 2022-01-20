@@ -13,6 +13,7 @@ public abstract class AddNewContactViewModel
     [StringLength(200, MinimumLength = 2)]
     public string LastName { get; set; }
 
+    [Required]
     [EmailAddress]
     [StringLength(100, MinimumLength = 3)]
     public string Email { get; set; }

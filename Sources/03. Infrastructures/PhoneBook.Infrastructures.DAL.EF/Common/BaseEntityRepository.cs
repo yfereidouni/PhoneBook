@@ -16,11 +16,17 @@ public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEnt
     {
         this.phoneBookDbContext = phoneBookDbContext;
     }
+
     public TEntity Add(TEntity entity)
     {
         phoneBookDbContext.Set<TEntity>().Add(entity);
         phoneBookDbContext.SaveChanges();
         return entity;
+    }
+
+    public void Update(TEntity entity)
+    {
+        phoneBookDbContext.Set<TEntity>().Update(entity);
     }
 
     public void Delete(TEntity entity)
@@ -39,8 +45,4 @@ public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEnt
         return phoneBookDbContext.Set<TEntity>().AsQueryable();
     }
 
-    public void Update(TEntity entity)
-    {
-        phoneBookDbContext.Set<TEntity>().Update(entity);
-    }
 }

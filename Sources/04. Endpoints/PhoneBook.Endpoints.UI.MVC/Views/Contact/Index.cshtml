@@ -7,16 +7,25 @@
 {
     <table class="table table-bordered table-striped table-hover">
         <tr>
-            <th>First Name</th>
-            <th>Last Name</th>
-            <th>Detail</th>
+            <th class="span1">First Name</th>
+            <th class="span1">Last Name</th>
+            <th class="span1">Email</th>
+            <th class="span2">Address</th>
+            <th class="span1">Actions</th>
         </tr>
         @foreach (var item in Model)
         {
             <tr>
                 <td>@item.FirstName</td>
                 <td>@item.LastName</td>
-                <td><a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a></td>
+                <td>@item.Email</td>
+                <td>@item.Address</td>
+                @*<td><a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a></td>*@
+                <td class="text-center">
+                    <a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a>
+                    <a asp-controller="Contact" asp-action="Update" asp-route-id="@item.Id" class="badge badge-group-sm badge-warning">Edit</a>
+                    <a asp-controller="Contact" asp-action="Delete" asp-route-id="@item.Id" class="badge badge-group-sm badge-danger">Delete</a>
+                </td>
             </tr>
         }
     </table>
@@ -25,7 +34,7 @@ else
 {
     @*<div class="alert alert-info" role="alert">
         There is no any recored in DB.
-    </div>*@
+        </div>*@
 
     <div class="alert alert-info alert-dismissible fade show" role="alert">
         <strong>Notice!</strong> There is no any recored in DB.
@@ -40,7 +49,7 @@ else
 <script>
     $(document).ready(function () {
         $(".collapse-item").click(function() {
-	        $(this).addClass("active");
+            $(this).addClass("active");
         });
 
     });
