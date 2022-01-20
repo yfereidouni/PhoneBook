@@ -156,7 +156,6 @@ affiliatetheme:
 air-freshener:
   changes:
     - 5.2.0
-    - 5.15.3
   label: Air Freshener
   search:
     terms:
@@ -15227,7 +15226,7 @@ ravelry:
   changes:
     - '4.7'
     - 5.0.0
-    - 5.15.1
+    - 5.15.0
   label: Ravelry
   search:
     terms: []
@@ -20641,7 +20640,7 @@ venus-mars:
 vest:
   changes:
     - 5.15.0
-    - 5.15.1
+    - 5.15.0
   label: vest
   search:
     terms:
@@ -20655,7 +20654,7 @@ vest:
 vest-patches:
   changes:
     - 5.15.0
-    - 5.15.1
+    - 5.15.0
   label: vest-patches
   search:
     terms:
@@ -20681,7 +20680,7 @@ viadeo:
   changes:
     - '4.6'
     - 5.0.0
-  label: Viadeo
+  label: Video
   search:
     terms: []
   styles:
@@ -20693,7 +20692,7 @@ viadeo-square:
     - '4.6'
     - 5.0.0
     - 5.7.0
-  label: Viadeo Square
+  label: Video Square
   search:
     terms: []
   styles:

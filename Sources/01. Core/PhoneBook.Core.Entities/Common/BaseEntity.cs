@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Core.Entities.Common;
+namespace PhoneBook.Core.Entities.Common;
 
 public abstract class BaseEntity
 {

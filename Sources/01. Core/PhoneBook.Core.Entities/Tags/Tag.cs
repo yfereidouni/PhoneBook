@@ -1,6 +1,6 @@
-﻿using PB.Core.Entities.Common;
+﻿using PhoneBook.Core.Entities.Common;
 
-namespace PB.Core.Entities.Tags;
+namespace PhoneBook.Core.Entities.Tags;
 
 public class Tag : BaseEntity
 {

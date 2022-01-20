@@ -4,7 +4,7 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using PB.Infrastructures.DAL.EF.Common;
+using PhoneBook.Infrastructures.DAL.EF.Common;
 
 #nullable disable
 
@@ -22,7 +22,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder, 1L, 1);
 
-            modelBuilder.Entity("PB.Core.Entities.Contacts.Contact", b =>
+            modelBuilder.Entity("PhoneBook.Core.Entities.Contacts.Contact", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -31,13 +31,17 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<string>("Address")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(500)
+                        .HasColumnType("nvarchar(500)");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("FirstName")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Image")
                         .IsRequired()
@@ -45,20 +49,38 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 
                     b.Property<string>("LastName")
                         .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
-
-                    b.Property<string>("MiddleName")
-                        .IsRequired()
-                        .HasMaxLength(150)
-                        .HasColumnType("nvarchar(150)");
+                        .HasMaxLength(200)
+                        .HasColumnType("nvarchar(200)");
 
                     b.HasKey("Id");
 
                     b.ToTable("Contacts");
                 });
 
-            modelBuilder.Entity("PB.Core.Entities.Phones.Phone", b =>
+            modelBuilder.Entity("PhoneBook.Core.Entities.Contacts.ContactTag", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
+
+                    b.Property<int>("ContactId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TagId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ContactId");
+
+                    b.HasIndex("TagId");
+
+                    b.ToTable("ContactTags");
+                });
+
+            modelBuilder.Entity("PhoneBook.Core.Entities.Phones.Phone", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -86,7 +108,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                     b.ToTable("Phones");
                 });
 
-            modelBuilder.Entity("PB.Core.Entities.Phones.PhoneType", b =>
+            modelBuilder.Entity("PhoneBook.Core.Entities.Phones.PhoneType", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -126,7 +148,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         });
                 });
 
-            modelBuilder.Entity("PB.Core.Entities.Tags.Tag", b =>
+            modelBuilder.Entity("PhoneBook.Core.Entities.Tags.Tag", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -188,51 +210,13 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 
             modelBuilder.Entity("PhoneBook.Core.Entities.Contacts.ContactTag", b =>
                 {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
-
-                    b.Property<int>("ContactId")
-                        .HasColumnType("int");
-
-                    b.Property<int>("TagId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("ContactId");
-
-                    b.HasIndex("TagId");
-
-                    b.ToTable("ContactTags");
-                });
-
-            modelBuilder.Entity("PB.Core.Entities.Phones.Phone", b =>
-                {
-                    b.HasOne("PB.Core.Entities.Contacts.Contact", null)
-                        .WithMany("Phones")
-                        .HasForeignKey("ContactId");
-
-                    b.HasOne("PB.Core.Entities.Phones.PhoneType", "PhoneType")
-                        .WithMany()
-                        .HasForeignKey("PhoneTypeId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("PhoneType");
-                });
-
-            modelBuilder.Entity("PhoneBook.Core.Entities.Contacts.ContactTag", b =>
-                {
-                    b.HasOne("PB.Core.Entities.Contacts.Contact", "Contact")
+                    b.HasOne("PhoneBook.Core.Entities.Contacts.Contact", "Contact")
                         .WithMany("Tags")
                         .HasForeignKey("ContactId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
-                    b.HasOne("PB.Core.Entities.Tags.Tag", "Tag")
+                    b.HasOne("PhoneBook.Core.Entities.Tags.Tag", "Tag")
                         .WithMany()
                         .HasForeignKey("TagId")
                         .OnDelete(DeleteBehavior.Cascade)
@@ -243,7 +227,22 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                     b.Navigation("Tag");
                 });
 
-            modelBuilder.Entity("PB.Core.Entities.Contacts.Contact", b =>
+            modelBuilder.Entity("PhoneBook.Core.Entities.Phones.Phone", b =>
+                {
+                    b.HasOne("PhoneBook.Core.Entities.Contacts.Contact", null)
+                        .WithMany("Phones")
+                        .HasForeignKey("ContactId");
+
+                    b.HasOne("PhoneBook.Core.Entities.Phones.PhoneType", "PhoneType")
+                        .WithMany()
+                        .HasForeignKey("PhoneTypeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("PhoneType");
+                });
+
+            modelBuilder.Entity("PhoneBook.Core.Entities.Contacts.Contact", b =>
                 {
                     b.Navigation("Phones");
 

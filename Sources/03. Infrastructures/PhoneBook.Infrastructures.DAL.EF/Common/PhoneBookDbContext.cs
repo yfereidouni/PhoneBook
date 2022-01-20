@@ -1,10 +1,10 @@
 ﻿using Microsoft.EntityFrameworkCore;
-using PB.Core.Entities.Contacts;
-using PB.Core.Entities.Phones;
-using PB.Core.Entities.Tags;
-using PB.Infrastructures.DAL.EF.Contacts;
-using PB.Infrastructures.DAL.EF.Phones;
-using PB.Infrastructures.DAL.EF.Tags;
+using PhoneBook.Core.Entities.Contacts;
+using PhoneBook.Core.Entities.Phones;
+using PhoneBook.Core.Entities.Tags;
+using PhoneBook.Infrastructures.DAL.EF.Contacts;
+using PhoneBook.Infrastructures.DAL.EF.Phones;
+using PhoneBook.Infrastructures.DAL.EF.Tags;
 using PhoneBook.Core.Entities.Contacts;
 using System;
 using System.Collections.Generic;
@@ -12,7 +12,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Infrastructures.DAL.EF.Common;
+namespace PhoneBook.Infrastructures.DAL.EF.Common;
 
 public class PhoneBookDbContext : DbContext
 {

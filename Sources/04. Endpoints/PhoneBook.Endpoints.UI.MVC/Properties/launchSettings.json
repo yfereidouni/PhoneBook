@@ -8,7 +8,7 @@
     }
   },
   "profiles": {
-    "PB.Endpoints.UI.MVC": {
+    "PhoneBook.Endpoints.UI.MVC": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

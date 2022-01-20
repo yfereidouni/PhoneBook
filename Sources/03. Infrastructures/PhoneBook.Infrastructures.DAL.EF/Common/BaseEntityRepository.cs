@@ -1,12 +1,12 @@
-﻿using PB.Core.Contracts.Common;
-using PB.Core.Entities.Common;
+﻿using PhoneBook.Core.Contracts.Common;
+using PhoneBook.Core.Entities.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Infrastructures.DAL.EF.Common;
+namespace PhoneBook.Infrastructures.DAL.EF.Common;
 
 public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEntity> where TEntity : BaseEntity, new()
 {
@@ -16,10 +16,11 @@ public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEnt
     {
         this.phoneBookDbContext = phoneBookDbContext;
     }
-    public void Add(TEntity entity)
+    public TEntity Add(TEntity entity)
     {
         phoneBookDbContext.Set<TEntity>().Add(entity);
         phoneBookDbContext.SaveChanges();
+        return entity;
     }
 
     public void Delete(TEntity entity)

@@ -1,6 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 
-namespace PB.Endpoints.UI.MVC.Controllers
+namespace PhoneBook.Endpoints.UI.MVC.Controllers
 {
     public class TagController : Controller
     {

@@ -1,12 +1,12 @@
-﻿using PB.Core.Contracts.Common;
-using PB.Core.Entities.Phones;
+﻿using PhoneBook.Core.Contracts.Common;
+using PhoneBook.Core.Entities.Phones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Core.Contracts.Phones;
+namespace PhoneBook.Core.Contracts.Phones;
 
 public interface IPhoneRepository : IBaseEntityRepository<Phone>
 {

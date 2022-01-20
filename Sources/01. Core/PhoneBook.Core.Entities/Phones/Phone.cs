@@ -1,6 +1,6 @@
-﻿using PB.Core.Entities.Common;
+﻿using PhoneBook.Core.Entities.Common;
 
-namespace PB.Core.Entities.Phones;
+namespace PhoneBook.Core.Entities.Phones;
 
 public class Phone : BaseEntity
 {

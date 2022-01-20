@@ -1,12 +1,12 @@
-﻿using PB.Core.Contracts.Common;
-using PB.Core.Entities.Tags;
+﻿using PhoneBook.Core.Contracts.Common;
+using PhoneBook.Core.Entities.Tags;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Core.Contracts.Tags;
+namespace PhoneBook.Core.Contracts.Tags;
 
 public interface ITagRepository : IBaseEntityRepository<Tag>
 {

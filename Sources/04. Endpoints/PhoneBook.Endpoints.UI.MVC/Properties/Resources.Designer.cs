@@ -8,7 +8,7 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace PB.Endpoints.UI.MVC.Properties {
+namespace PhoneBook.Endpoints.UI.MVC.Properties {
     using System;
     
     
@@ -39,7 +39,7 @@ namespace PB.Endpoints.UI.MVC.Properties {
         internal static global::System.Resources.ResourceManager ResourceManager {
             get {
                 if (object.ReferenceEquals(resourceMan, null)) {
-                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PB.Endpoints.UI.MVC.Properties.Resources", typeof(Resources).Assembly);
+                    global::System.Resources.ResourceManager temp = new global::System.Resources.ResourceManager("PhoneBook.Endpoints.UI.MVC.Properties.Resources", typeof(Resources).Assembly);
                     resourceMan = temp;
                 }
                 return resourceMan;

@@ -6,7 +6,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Infrastructures.DAL.EF.Common
+namespace PhoneBook.Infrastructures.DAL.EF.Common
 {
     public class PhoneBookDbContextFactory : IDesignTimeDbContextFactory<PhoneBookDbContext>
     {

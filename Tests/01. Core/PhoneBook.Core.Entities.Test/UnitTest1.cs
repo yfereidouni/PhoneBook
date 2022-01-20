@@ -1,6 +1,6 @@
 using Xunit;
 
-namespace PB.Core.Entities.Test
+namespace PhoneBook.Core.Entities.Test
 {
     public class UnitTest1
     {

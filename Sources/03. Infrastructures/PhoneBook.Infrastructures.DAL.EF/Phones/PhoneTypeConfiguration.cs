@@ -1,13 +1,13 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
-using PB.Core.Entities.Phones;
+using PhoneBook.Core.Entities.Phones;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Infrastructures.DAL.EF.Phones;
+namespace PhoneBook.Infrastructures.DAL.EF.Phones;
 
 public class PhoneTypeConfiguration : IEntityTypeConfiguration<PhoneType>
 {

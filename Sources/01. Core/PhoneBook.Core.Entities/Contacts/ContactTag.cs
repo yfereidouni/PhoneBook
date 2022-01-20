@@ -1,6 +1,6 @@
-﻿using PB.Core.Entities.Common;
-using PB.Core.Entities.Contacts;
-using PB.Core.Entities.Tags;
+﻿using PhoneBook.Core.Entities.Common;
+using PhoneBook.Core.Entities.Contacts;
+using PhoneBook.Core.Entities.Tags;
 using System;
 using System.Collections.Generic;
 using System.Linq;

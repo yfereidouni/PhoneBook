@@ -1,11 +1,11 @@
 using Microsoft.EntityFrameworkCore;
-using PB.Core.Contracts.Contacts;
-using PB.Core.Contracts.Phones;
-using PB.Core.Contracts.Tags;
-using PB.Infrastructures.DAL.EF.Common;
-using PB.Infrastructures.DAL.EF.Contacts;
-using PB.Infrastructures.DAL.EF.Phones;
-using PB.Infrastructures.DAL.EF.Tags;
+using PhoneBook.Core.Contracts.Contacts;
+using PhoneBook.Core.Contracts.Phones;
+using PhoneBook.Core.Contracts.Tags;
+using PhoneBook.Infrastructures.DAL.EF.Common;
+using PhoneBook.Infrastructures.DAL.EF.Contacts;
+using PhoneBook.Infrastructures.DAL.EF.Phones;
+using PhoneBook.Infrastructures.DAL.EF.Tags;
 
 var builder = WebApplication.CreateBuilder(args);
 

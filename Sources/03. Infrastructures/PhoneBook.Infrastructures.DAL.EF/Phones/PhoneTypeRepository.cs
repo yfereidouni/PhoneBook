@@ -1,13 +1,13 @@
-﻿using PB.Core.Contracts.Contacts;
-using PB.Core.Entities.Phones;
-using PB.Infrastructures.DAL.EF.Common;
+﻿using PhoneBook.Core.Contracts.Contacts;
+using PhoneBook.Core.Entities.Phones;
+using PhoneBook.Infrastructures.DAL.EF.Common;
 using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace PB.Infrastructures.DAL.EF.Phones;
+namespace PhoneBook.Infrastructures.DAL.EF.Phones;
 
 public class PhoneTypeRepository : BaseEntityRepository<PhoneType>, IPhoneTypeRepository
 {
