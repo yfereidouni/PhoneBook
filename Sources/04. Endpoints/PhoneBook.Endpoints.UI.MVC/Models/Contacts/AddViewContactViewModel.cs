@@ -19,16 +19,16 @@ public abstract class AddNewContactViewModel
     public string Email { get; set; }
 
     [StringLength(500)]
-    public string Address { get; set; }
+    public string? Address { get; set; }
 
     public IFormFile Image { get; set; }
 
 }
 public class AddNewContactDisplayViewModel : AddNewContactViewModel
 {
-    public List<Tag> TagsForDisplay { get; set; }
+    public List<Tag> TagsForDisplay { get; set; } = new List<Tag>();
 }
 public class AddNewContactGetViewModel : AddNewContactViewModel
 {
-    public List<int> SelectedTag { get; set; }
+    public List<int> SelectedTag { get; set; } = new List<int>();
 }

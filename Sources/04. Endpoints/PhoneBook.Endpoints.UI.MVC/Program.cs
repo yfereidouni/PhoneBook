@@ -6,6 +6,9 @@ using PhoneBook.Infrastructures.DAL.EF.Common;
 using PhoneBook.Infrastructures.DAL.EF.Contacts;
 using PhoneBook.Infrastructures.DAL.EF.Phones;
 using PhoneBook.Infrastructures.DAL.EF.Tags;
+using PhoneBook.Services.ApplicationServices.Contacts;
+using PhoneBook.Services.ApplicationServices.Phones;
+using PhoneBook.Services.ApplicationServices.Tags;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -18,10 +21,17 @@ builder.Services.AddDbContext<PhoneBookDbContext>(options => options
                 .UseSqlServer(builder.Configuration
                 .GetConnectionString("PhoneBook_ConnectionString")));
 
+//Repository
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
 builder.Services.AddScoped<IPhoneRepository, PhoneRepository>();
 builder.Services.AddScoped<IPhoneTypeRepository, PhoneTypeRepository>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
+
+//Service
+builder.Services.AddScoped<IContactService, ContactService>();
+builder.Services.AddScoped<IPhoneService, PhoneService>();
+builder.Services.AddScoped<IPhoneTypeService, PhoneTypeService>();
+builder.Services.AddScoped<ITagService, TagService>();
 
 
 var app = builder.Build();

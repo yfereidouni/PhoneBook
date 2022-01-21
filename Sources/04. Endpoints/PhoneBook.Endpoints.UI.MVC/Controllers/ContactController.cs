@@ -2,28 +2,26 @@
 using PhoneBook.Core.Contracts.Contacts;
 using PhoneBook.Core.Contracts.Tags;
 using PhoneBook.Core.Entities.Contacts;
-using PhoneBook.Core.Entities.Tags;
-using PhoneBook.Core.Entities.Contacts;
 using PhoneBook.Endpoints.UI.MVC.Models.Contacts;
 
 namespace PhoneBook.Endpoints.UI.MVC.Controllers;
 
 public class ContactController : Controller
 {
-    private readonly IContactRepository contactRepository;
-    private readonly ITagRepository tagRepository;
+    private readonly IContactService contactService;
+    private readonly ITagService tagService;
 
-    public ContactController(IContactRepository contactRepository, ITagRepository tagRepository)
+    public ContactController(IContactService contactService, ITagService tagService)
     {
-        this.contactRepository = contactRepository;
-        this.tagRepository = tagRepository;
+        this.contactService = contactService;
+        this.tagService = tagService;
     }
 
     public IActionResult Index()
     {
         ViewBag.PageTitle = "List of Contacts";
 
-        var contacts = contactRepository.GetAll().ToList();
+        var contacts = contactService.GetAll().ToList();
         return View(contacts);
     }
 
@@ -33,7 +31,7 @@ public class ContactController : Controller
 
         AddNewContactDisplayViewModel model = new()
         {
-            TagsForDisplay = tagRepository.GetAll().ToList()
+            TagsForDisplay = tagService.GetAll().ToList()
         };
         return View(model);
     }
@@ -63,14 +61,14 @@ public class ContactController : Controller
                     contact.Image = Convert.ToBase64String(fileBytes);
                 }
             }
-            var result = contactRepository.Add(contact);
+            var result = contactService.Add(contact);
             if (result != null)
             {
                 return RedirectToAction("Index");
             }
         }
 
-        ViewBag.SelectedItem = model.SelectedTag;
+        ViewBag.SelectedItem = model?.SelectedTag;
         
         //ViewBag.ImageFileName = model.Image.FileName;
 
@@ -83,9 +81,14 @@ public class ContactController : Controller
             Image = model.Image
         };
 
-        modelForDisplay.TagsForDisplay = tagRepository.GetAll().ToList();
+        modelForDisplay.TagsForDisplay = tagService.GetAll().ToList();
 
         return View(modelForDisplay);
+    }
+
+    public IActionResult Details()
+    {
+        return View();
     }
 
 }
