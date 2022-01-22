@@ -86,9 +86,21 @@ public class ContactController : Controller
         return View(modelForDisplay);
     }
 
-    public IActionResult Details()
+    public IActionResult Detail(int id)
     {
-        return View();
+        ViewBag.PageTitle = "Details of Contact";
+
+        var contact = contactService.FindById(id);
+        var model = new ContactDetailsViewModel
+        {
+            ContactId = contact.Id,
+            Address = contact.Address,
+            FirstName = contact.FirstName,
+            LastName = contact.LastName,
+            Email = contact.Email,
+            Image = contact.Image
+        };
+        return View(model);
     }
 
 }

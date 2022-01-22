@@ -315,3 +315,4 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpo
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\ref\PhoneBook.Endpoints.UI.MVC.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.genruntimeconfig.cache
+C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\libman.json
