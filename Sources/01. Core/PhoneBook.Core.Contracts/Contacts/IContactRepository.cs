@@ -10,5 +10,5 @@ namespace PhoneBook.Core.Contracts.Contacts;
 
 public interface IContactRepository : IBaseEntityRepository<Contact>
 {
-
+    Contact GetContactWithPhones(int contactId);
 }

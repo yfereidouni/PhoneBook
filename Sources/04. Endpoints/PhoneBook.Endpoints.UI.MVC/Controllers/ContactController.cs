@@ -69,7 +69,7 @@ public class ContactController : Controller
         }
 
         ViewBag.SelectedItem = model?.SelectedTag;
-        
+
         //ViewBag.ImageFileName = model.Image.FileName;
 
         AddNewContactDisplayViewModel modelForDisplay = new()
@@ -90,17 +90,22 @@ public class ContactController : Controller
     {
         ViewBag.PageTitle = "Details of Contact";
 
-        var contact = contactService.FindById(id);
-        var model = new ContactDetailsViewModel
+        var contact = contactService.GetPersonWithChilds(id);
+        if (contact != null)
         {
-            ContactId = contact.Id,
-            Address = contact.Address,
-            FirstName = contact.FirstName,
-            LastName = contact.LastName,
-            Email = contact.Email,
-            Image = contact.Image
-        };
-        return View(model);
+            var model = new ContactDetailsViewModel
+            {
+                ContactId = contact.Id,
+                FirstName = contact.FirstName,
+                LastName = contact.LastName,
+                Email = contact.Email,
+                Address = contact.Address,
+                Image = contact.Image,
+                Phones = contact.Phones
+            };
+            model.Tags = tagService.GetContactTagsByContactId(contact.Id);
+            return View(model);
+        }
+        return View();
     }
-
 }

@@ -1,0 +1,17 @@
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Services.ApplicationServices.deps.json
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\ref\PhoneBook.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Services.ApplicationServices.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Core.Contracts.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Release\net6.0\PhoneBook.Core.Entities.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.AssemblyInfoInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.AssemblyInfo.cs
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.csproj.CoreCompileInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.csproj.CopyComplete
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\ref\PhoneBook.Services.ApplicationServices.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Release\net6.0\PhoneBook.Services.ApplicationServices.pdb

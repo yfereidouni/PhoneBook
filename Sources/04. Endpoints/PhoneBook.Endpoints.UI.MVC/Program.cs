@@ -26,6 +26,7 @@ builder.Services.AddScoped<IContactRepository, ContactRepository>();
 builder.Services.AddScoped<IPhoneRepository, PhoneRepository>();
 builder.Services.AddScoped<IPhoneTypeRepository, PhoneTypeRepository>();
 builder.Services.AddScoped<ITagRepository, TagRepository>();
+builder.Services.AddScoped<IContactTagRepository, ContactTagRepository>();
 
 //Service
 builder.Services.AddScoped<IContactService, ContactService>();

@@ -5,7 +5,6 @@ using PhoneBook.Core.Entities.Tags;
 using PhoneBook.Infrastructures.DAL.EF.Contacts;
 using PhoneBook.Infrastructures.DAL.EF.Phones;
 using PhoneBook.Infrastructures.DAL.EF.Tags;
-using PhoneBook.Core.Entities.Contacts;
 using System;
 using System.Collections.Generic;
 using System.Linq;

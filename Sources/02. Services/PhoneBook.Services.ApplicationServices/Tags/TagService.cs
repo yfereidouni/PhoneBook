@@ -1,4 +1,5 @@
-﻿using PhoneBook.Core.Contracts.Tags;
+﻿using PhoneBook.Core.Contracts.Contacts;
+using PhoneBook.Core.Contracts.Tags;
 using PhoneBook.Core.Entities.Contacts;
 using PhoneBook.Core.Entities.Tags;
 using System;
@@ -12,10 +13,12 @@ namespace PhoneBook.Services.ApplicationServices.Tags;
 public class TagService : ITagService
 {
     private readonly ITagRepository tagRepository;
+    private readonly IContactTagRepository contactTagRepository;
 
-    public TagService(ITagRepository tagRepository)
+    public TagService(ITagRepository tagRepository, IContactTagRepository contactTagRepository)
     {
         this.tagRepository = tagRepository;
+        this.contactTagRepository = contactTagRepository;
     }
 
     public Tag Add(Tag entity)
@@ -38,8 +41,25 @@ public class TagService : ITagService
         return tagRepository.GetAll();
     }
 
+    public List<Tag> GetAllContactTags(List<ContactTag> tags)
+    {
+        List<Tag> resultTags = new List<Tag>();
+        for (int i = 0; i < tags.Count; i++)
+        {
+            resultTags.Add(tagRepository.FindById(tags[i].TagId));
+        }
+        return resultTags;
+    }
+
+    public List<Tag> GetContactTagsByContactId(int contactId)
+    {
+        return GetAllContactTags(contactTagRepository.Where(c => c.ContactId == contactId));
+    }
+
     public void Update(Tag entity)
     {
         throw new NotImplementedException();
     }
+
+
 }

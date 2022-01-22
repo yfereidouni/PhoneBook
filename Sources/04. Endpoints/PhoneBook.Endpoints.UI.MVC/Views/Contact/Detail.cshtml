@@ -6,10 +6,10 @@
 }
 
 <div class="d-flex bd-highlight border">
-    <div class="p-2 bd-highlight border">
+    <div class="p-2 bd-highlight ">
         <img class="rounded" src="@imgSrc" height="150" width="150" class="img-thumbnail" alt="@fullName" />
     </div>
-    <div class="p-2 flex-grow-1 bd-highlight border">
+    <div class="p-2 bd-highlight  flex-grow-1">
         <div>
             <b><label asp-for="FirstName"></label> : </b> @Model.FirstName
         </div>
@@ -22,13 +22,54 @@
         <div>
             <b><label asp-for="Address"></label> : </b> @Model.Address
         </div>
-
     </div>
-    <div class="p-2 bd-highlight border">
+    <div class="p-2 bd-highlight ">
         <div>
             <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
             <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
         </div>
     </div>
 </div>
+
+@*Tags*@
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>Tag Name</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model.Tags)
+    {
+        <tr>
+            <td>@item.Name</td>
+            <td class="text-center">
+                <a class="btn-sm btn-outline-secondary" asp-controller="Tag" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
+                <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+    }
+</table>
+
+@*Phones*@
+<table class="table table-bordered table-striped table-hover">
+    <tr>
+        <th>Phone Number</th>
+        <th>Actions</th>
+    </tr>
+    @foreach (var item in Model.Phones)
+    {
+        <tr>
+            <td>@item.PhoneNumber</td>
+            <td class="text-center">
+                @*  <a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a>
+                    <a asp-controller="Contact" asp-action="Update" asp-route-id="@item.Id" class="badge badge-group-sm badge-warning">Edit</a>
+                    <a asp-controller="Contact" asp-action="Delete" asp-route-id="@item.Id" class="badge badge-group-sm badge-danger">Delete</a>
+                *@
+                <a class="btn-sm btn-outline-secondary" asp-controller="Phone" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
+                <a class="btn-sm btn-outline-primary" asp-controller="Phone" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                <a class="btn-sm btn-outline-danger" asp-controller="Phone" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+            </td>
+        </tr>
+    }
+</table>
 

@@ -10,7 +10,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Common;
 
 public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEntity> where TEntity : BaseEntity, new()
 {
-    private readonly PhoneBookDbContext phoneBookDbContext;
+    protected readonly PhoneBookDbContext phoneBookDbContext;
 
     public BaseEntityRepository(PhoneBookDbContext phoneBookDbContext)
     {

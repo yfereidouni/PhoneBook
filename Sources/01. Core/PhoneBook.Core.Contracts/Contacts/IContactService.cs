@@ -11,7 +11,7 @@ namespace PhoneBook.Core.Contracts.Contacts
 {
     public interface IContactService : IBaseService<Contact>
     {
-
+        Contact GetPersonWithChilds(int contactId);
     }
 
 }

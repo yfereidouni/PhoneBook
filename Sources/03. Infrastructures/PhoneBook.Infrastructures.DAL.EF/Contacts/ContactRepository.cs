@@ -1,4 +1,5 @@
-﻿using PhoneBook.Core.Contracts.Contacts;
+﻿using Microsoft.EntityFrameworkCore;
+using PhoneBook.Core.Contracts.Contacts;
 using PhoneBook.Core.Entities.Contacts;
 using PhoneBook.Infrastructures.DAL.EF.Common;
 using System;
@@ -13,5 +14,10 @@ public class ContactRepository : BaseEntityRepository<Contact>, IContactReposito
 {
     public ContactRepository(PhoneBookDbContext phoneBookDbContext) : base(phoneBookDbContext)
     {
+    }
+
+    public Contact GetContactWithPhones(int contactId)
+    {
+        return phoneBookDbContext.Contacts.Where(c => c.Id == contactId).Include(c => c.Phones).FirstOrDefault();
     }
 }

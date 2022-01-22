@@ -1,0 +1,12 @@
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\bin\Release\net6.0\PhoneBook.Core.Entities.deps.json
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\bin\Release\net6.0\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\bin\Release\net6.0\ref\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\bin\Release\net6.0\PhoneBook.Core.Entities.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.AssemblyInfoInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.AssemblyInfo.cs
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.csproj.CoreCompileInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\ref\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\obj\Release\net6.0\PhoneBook.Core.Entities.pdb

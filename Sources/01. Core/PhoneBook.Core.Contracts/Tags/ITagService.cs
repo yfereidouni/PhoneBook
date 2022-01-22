@@ -11,5 +11,7 @@ namespace PhoneBook.Core.Contracts.Tags
 {
     public interface ITagService : IBaseService<Tag>
     {
+        List<Tag> GetAllContactTags(List<ContactTag> tags);
+        List<Tag> GetContactTagsByContactId(int contactId);
     }
 }

@@ -1,0 +1,15 @@
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\PhoneBook.Core.Contracts.deps.json
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\PhoneBook.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\ref\PhoneBook.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\PhoneBook.Core.Contracts.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\PhoneBook.Core.Entities.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Release\net6.0\PhoneBook.Core.Entities.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.AssemblyInfoInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.AssemblyInfo.cs
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.csproj.CoreCompileInputs.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.csproj.CopyComplete
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\ref\PhoneBook.Core.Contracts.dll
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Release\net6.0\PhoneBook.Core.Contracts.pdb
