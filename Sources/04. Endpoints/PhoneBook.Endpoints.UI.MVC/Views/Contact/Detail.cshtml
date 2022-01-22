@@ -5,11 +5,12 @@
     var fullName = Model.FirstName + " " + Model.LastName;
 }
 
-<div class="d-flex bd-highlight border">
+@*Image and Information*@
+<div class="d-flex bd-highlight border flex-wrap">
     <div class="p-2 bd-highlight ">
-        <img class="rounded" src="@imgSrc" height="150" width="150" class="img-thumbnail" alt="@fullName" />
+        <img src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
     </div>
-    <div class="p-2 bd-highlight  flex-grow-1">
+    <div class="p-2 bd-highlight flex-grow-1">
         <div>
             <b><label asp-for="FirstName"></label> : </b> @Model.FirstName
         </div>
@@ -23,13 +24,27 @@
             <b><label asp-for="Address"></label> : </b> @Model.Address
         </div>
     </div>
-    <div class="p-2 bd-highlight ">
+    <div class="p-2 bd-highlight">
         <div>
             <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
             <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
         </div>
     </div>
 </div>
+
+
+@*Pills*@
+<div class="d-flex bd-highlight border flex-wrap justify-content-around">
+    <div class="p-2 bd-highlight flex-grow-1 ">
+        <div>
+            @foreach (var item in Model.Tags)
+            {
+                <span class="badge badge-pill badge-primary">@item.Name</span>
+            }
+        </div>
+    </div>
+</div>
+
 
 @*Tags*@
 <table class="table table-bordered table-striped table-hover">
