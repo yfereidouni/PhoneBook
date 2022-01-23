@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Content Remove="Views\Home\_LayoutDashboard.cshtml" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.1" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.1">
       <PrivateAssets>all</PrivateAssets>
@@ -15,6 +19,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <None Include="Views\Shared\_LayoutDashboard.cshtml" />
     <None Include="wwwroot\img\undraw_posting_photo.svg" />
     <None Include="wwwroot\img\undraw_profile.svg" />
     <None Include="wwwroot\img\undraw_profile_1.svg" />

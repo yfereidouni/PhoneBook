@@ -6,72 +6,110 @@
 }
 
 @*Image and Information*@
-<div class="d-flex bd-highlight border flex-wrap">
+@*<div class="d-flex bd-highlight border flex-wrap">
     <div class="p-2 bd-highlight ">
-        <img src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
+    <img src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
     </div>
     <div class="p-2 bd-highlight flex-grow-1">
-        <div>
-            <b><label asp-for="FirstName"></label> : </b> @Model.FirstName
-        </div>
-        <div>
-            <b><label asp-for="LastName"></label> : </b> @Model.LastName
-        </div>
-        <div>
-            <b><label asp-for="Email"></label> : </b> @Model.Email
-        </div>
-        <div>
-            <b><label asp-for="Address"></label> : </b> @Model.Address
-        </div>
+    <div>
+    <b><label asp-for="FirstName"></label> : </b> @Model.FirstName
+    </div>
+    <div>
+    <b><label asp-for="LastName"></label> : </b> @Model.LastName
+    </div>
+    <div>
+    <b><label asp-for="Email"></label> : </b> @Model.Email
+    </div>
+    <div>
+    <b><label asp-for="Address"></label> : </b> @Model.Address
+    </div>
     </div>
     <div class="p-2 bd-highlight">
-        <div>
-            <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
-            <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
-        </div>
+    <div>
+    <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
+    <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
     </div>
-</div>
+    </div>
+    </div>*@
 
-@*Tags*@
-<div class="d-flex bd-highlight border flex-wrap justify-content-around">
-    <div class="p-2 bd-highlight flex-grow-1 ">
-        <div>
-            <b>Tags : </b>
-            @foreach (var item in Model.Tags)
-            {
-                <div class="d-flex">
-                    <div class="mr-auto p-2">
-                        @*<div>@item.Name</div>*@
-                        <span class="badge badge-primary">@item.Name</span>
-                    </div>
-                    <div class="ml-auto p-2">
-                        <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-                        <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
-                    </div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">@Model.FirstName @Model.LastName</h6>
+    </div>
+    <div class="card-body">
+        
+        @*Image and Information*@
+        <div class="d-flex bd-highlight border flex-wrap">
+            <div class="p-2 bd-highlight ">
+                <img src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
+            </div>
+            <div class="p-2 bd-highlight flex-grow-1">
+                <div>
+                    <b><label asp-for="FirstName"></label> : </b> @Model.FirstName
                 </div>
-            }
+                <div>
+                    <b><label asp-for="LastName"></label> : </b> @Model.LastName
+                </div>
+                <div>
+                    <b><label asp-for="Email"></label> : </b> @Model.Email
+                </div>
+                <div>
+                    <b><label asp-for="Address"></label> : </b> @Model.Address
+                </div>
+            </div>
+            <div class="p-2 bd-highlight">
+                <div>
+                    <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
+                    <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
+                </div>
+            </div>
         </div>
-    </div>
-</div>
 
-@*Phones and Tags*@
-<div class="d-flex bd-highlight border flex-wrap justify-content-around">
-    <div class="p-2 bd-highlight flex-grow-1 ">
-        <div>
-            @foreach (var item in Model.Phones)
-            {
-                <div class="d-flex">
-                    <div class="mr-auto p-2">
-                        <div>
-                            <b>PhoneNumber : </b>@item.PhoneNumber <span class="badge badge-dark">@item.PhoneType.Name</span>
+        @*Tags*@
+        <div class="d-flex bd-highlight border flex-wrap justify-content-around">
+            <div class="p-2 bd-highlight flex-grow-1 ">
+                <div>
+                    <b>Tags : </b>
+                    @foreach (var item in Model.Tags)
+                    {
+                        <div class="d-flex">
+                            <div class="mr-auto p-2">
+                                @*<div>@item.Name</div>*@
+                                <span class="badge badge-primary">@item.Name</span>
+                            </div>
+                            <div class="ml-auto p-2">
+                                <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                                <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                            </div>
                         </div>
-                    </div>
-                    <div class="ml-auto p-2">
-                        <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-                        <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
-                    </div>
+                    }
                 </div>
-            }
+            </div>
         </div>
+
+        @*Phones and Tags*@
+        <div class="d-flex bd-highlight border flex-wrap justify-content-around">
+            <div class="p-2 bd-highlight flex-grow-1 ">
+                <div>
+                    @foreach (var item in Model.Phones)
+                    {
+                        <div class="d-flex">
+                            <div class="mr-auto p-2">
+                                <div>
+                                    <b>PhoneNumber : </b>@item.PhoneNumber <span class="badge badge-dark">@item.PhoneType.Name</span>
+                                </div>
+                            </div>
+                            <div class="ml-auto p-2">
+                                <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                                <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                            </div>
+                        </div>
+                    }
+                </div>
+            </div>
+        </div>
+
     </div>
 </div>
+
