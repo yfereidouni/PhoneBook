@@ -32,38 +32,44 @@
     </div>
 </div>
 
-
-@*Pills*@
+@*Tags*@
 <div class="d-flex bd-highlight border flex-wrap justify-content-around">
     <div class="p-2 bd-highlight flex-grow-1 ">
         <div>
             @foreach (var item in Model.Tags)
             {
-                <span class="badge badge-pill badge-primary">@item.Name</span>
+                <div class="d-flex">
+                    <div class="mr-auto p-2">
+                    @*<div>@item.Name</div>*@
+                    <span class="badge badge-pill badge-primary">@item.Name</span>
+                    </div>
+                    <div class="ml-auto p-2">
+                    <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                    <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
             }
         </div>
     </div>
 </div>
 
-
-@*Tags*@
-<table class="table table-bordered table-striped table-hover">
+@*<table class="table table-bordered table-striped table-hover">
     <tr>
-        <th>Tag Name</th>
-        <th>Actions</th>
+    <th>Tag Name</th>
+    <th>Actions</th>
     </tr>
     @foreach (var item in Model.Tags)
     {
-        <tr>
-            <td>@item.Name</td>
-            <td class="text-center">
-                <a class="btn-sm btn-outline-secondary" asp-controller="Tag" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
-                <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-                <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
-            </td>
-        </tr>
+    <tr>
+    <td>@item.Name</td>
+    <td class="text-center">
+    <a class="btn-sm btn-outline-secondary" asp-controller="Tag" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
+    <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+    <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+    </td>
+    </tr>
     }
-</table>
+    </table>*@
 
 @*Phones*@
 <table class="table table-bordered table-striped table-hover">
