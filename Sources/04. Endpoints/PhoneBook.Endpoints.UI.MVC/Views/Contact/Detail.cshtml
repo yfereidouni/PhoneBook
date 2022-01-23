@@ -35,13 +35,13 @@
 
 <div class="card shadow mb-4">
     <div class="card-header py-3">
-        <h6 class="m-0 font-weight-bold text-primary">@Model.FirstName @Model.LastName</h6>
+        <h6 class="m-0 font-weight-bold text-primary">General Information</h6>
     </div>
     <div class="card-body">
-        
+
         @*Image and Information*@
-        <div class="d-flex bd-highlight border flex-wrap">
-            <div class="p-2 bd-highlight ">
+        <div class="d-flex bd-highlight flex-wrap">
+            <div class="bd-highlight ">
                 <img src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
             </div>
             <div class="p-2 bd-highlight flex-grow-1">
@@ -58,7 +58,7 @@
                     <b><label asp-for="Address"></label> : </b> @Model.Address
                 </div>
             </div>
-            <div class="p-2 bd-highlight">
+            <div class="bd-highlight">
                 <div>
                     <a class="btn-sm btn-outline-primary" asp-controller="Contact" asp-action="Update" asp-route-id="@Model.ContactId"><i class="fa fa-edit"></i></a>
                     <a class="btn-sm btn-outline-danger" asp-controller="Contact" asp-action="Delete" asp-route-id="@Model.ContactId"><i class="fa fa-trash"></i></a>
@@ -66,11 +66,20 @@
             </div>
         </div>
 
+    </div>
+</div>
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Tags</h6>
+    </div>
+    <div class="card-body">
+
         @*Tags*@
-        <div class="d-flex bd-highlight border flex-wrap justify-content-around">
-            <div class="p-2 bd-highlight flex-grow-1 ">
+        <div class="d-flex bd-highlight flex-wrap justify-content-around">
+            <div class="bd-highlight flex-grow-1 ">
                 <div>
-                    <b>Tags : </b>
+                    @*<b>Tags : </b>*@
                     @foreach (var item in Model.Tags)
                     {
                         <div class="d-flex">
@@ -88,16 +97,26 @@
             </div>
         </div>
 
-        @*Phones and Tags*@
-        <div class="d-flex bd-highlight border flex-wrap justify-content-around">
-            <div class="p-2 bd-highlight flex-grow-1 ">
+    </div>
+</div>
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Phones</h6>
+    </div>
+    <div class="card-body">
+
+        @*Phones*@
+        <div class="d-flex bd-highlight flex-wrap justify-content-around">
+            <div class="bd-highlight flex-grow-1 ">
                 <div>
                     @foreach (var item in Model.Phones)
                     {
                         <div class="d-flex">
                             <div class="mr-auto p-2">
                                 <div>
-                                    <b>PhoneNumber : </b>@item.PhoneNumber <span class="badge badge-dark">@item.PhoneType.Name</span>
+                                    <span class="badge badge-dark">@item.PhoneType.Name</span>  @item.PhoneNumber
                                 </div>
                             </div>
                             <div class="ml-auto p-2">
@@ -112,4 +131,6 @@
 
     </div>
 </div>
+
+
 
