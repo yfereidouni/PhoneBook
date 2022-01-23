@@ -8,6 +8,8 @@ public class ContactDetailsViewModel: ContactViewModel
     public int ContactId { get; set; }
     public List<Phone> Phones { get; set; } = new List<Phone>();
     public List<Tag> Tags { get; set; } = new List<Tag>();
+    public List<PhoneType> PhoneTypes { get; set; } = new List<PhoneType>();
+
     //public string FirstName { get; set; }
     //public string LastName { get; set; }
     //public string Email { get; set; }

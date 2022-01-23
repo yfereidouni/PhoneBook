@@ -10,5 +10,6 @@ namespace PhoneBook.Core.Contracts.Phones;
 
 public interface IPhoneTypeService : IBaseService<PhoneType>
 {
-
+    List<PhoneType> GetAllContactPhoneTypes(List<Phone> tags);
+    List<PhoneType> GetContactPhoneTypesByContactId(int contactId);
 }

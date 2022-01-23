@@ -1,7 +1,9 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Core.Contracts.Contacts;
+using PhoneBook.Core.Contracts.Phones;
 using PhoneBook.Core.Contracts.Tags;
 using PhoneBook.Core.Entities.Contacts;
+using PhoneBook.Core.Entities.Phones;
 using PhoneBook.Endpoints.UI.MVC.Models.Contacts;
 
 namespace PhoneBook.Endpoints.UI.MVC.Controllers;
@@ -10,11 +12,13 @@ public class ContactController : Controller
 {
     private readonly IContactService contactService;
     private readonly ITagService tagService;
+    private readonly IPhoneTypeService phoneTypeService;
 
-    public ContactController(IContactService contactService, ITagService tagService)
+    public ContactController(IContactService contactService, ITagService tagService, IPhoneTypeService phoneTypeService)
     {
         this.contactService = contactService;
         this.tagService = tagService;
+        this.phoneTypeService = phoneTypeService;
     }
 
     public IActionResult Index()
@@ -31,7 +35,8 @@ public class ContactController : Controller
 
         AddNewContactDisplayViewModel model = new()
         {
-            TagsForDisplay = tagService.GetAll().ToList()
+            TagsForDisplay = tagService.GetAll().ToList(),
+            PhoneTypesForDisplay = phoneTypeService.GetAll().ToList()
         };
         return View(model);
     }
@@ -47,11 +52,17 @@ public class ContactController : Controller
                 LastName = model.LastName,
                 Address = model.Address,
                 Email = model.Email,
+                Phones = new List<Phone>(model.SelectedPhoneType.Select(c => new Phone 
+                { 
+                    PhoneNumber=model.PhoneNumber,
+                    PhoneTypeId = c
+                }).ToList()),
                 Tags = new List<ContactTag>(model.SelectedTag.Select(c => new ContactTag
                 {
                     TagId = c
                 }).ToList())
             };
+            
             if (model.Image.Length > 0)
             {
                 using (var ms = new MemoryStream())
@@ -70,7 +81,7 @@ public class ContactController : Controller
 
         ViewBag.SelectedItem = model?.SelectedTag;
 
-        //ViewBag.ImageFileName = model.Image.FileName;
+        ViewBag.SeletecdPhoneTypeItem = model?.SelectedPhoneType;
 
         AddNewContactDisplayViewModel modelForDisplay = new()
         {
@@ -104,6 +115,8 @@ public class ContactController : Controller
                 Phones = contact.Phones
             };
             model.Tags = tagService.GetContactTagsByContactId(contact.Id);
+            model.PhoneTypes = phoneTypeService.GetContactPhoneTypesByContactId(contact.Id);
+
             return View(model);
         }
         return View();

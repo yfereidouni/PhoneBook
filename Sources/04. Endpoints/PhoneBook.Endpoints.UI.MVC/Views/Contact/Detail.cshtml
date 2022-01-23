@@ -36,16 +36,17 @@
 <div class="d-flex bd-highlight border flex-wrap justify-content-around">
     <div class="p-2 bd-highlight flex-grow-1 ">
         <div>
+            <b>Tags : </b>
             @foreach (var item in Model.Tags)
             {
                 <div class="d-flex">
                     <div class="mr-auto p-2">
-                    @*<div>@item.Name</div>*@
-                    <span class="badge badge-pill badge-primary">@item.Name</span>
+                        @*<div>@item.Name</div>*@
+                        <span class="badge badge-primary">@item.Name</span>
                     </div>
                     <div class="ml-auto p-2">
-                    <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-                    <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                        <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                        <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
                     </div>
                 </div>
             }
@@ -53,44 +54,24 @@
     </div>
 </div>
 
-@*<table class="table table-bordered table-striped table-hover">
-    <tr>
-    <th>Tag Name</th>
-    <th>Actions</th>
-    </tr>
-    @foreach (var item in Model.Tags)
-    {
-    <tr>
-    <td>@item.Name</td>
-    <td class="text-center">
-    <a class="btn-sm btn-outline-secondary" asp-controller="Tag" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
-    <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-    <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
-    </td>
-    </tr>
-    }
-    </table>*@
-
-@*Phones*@
-<table class="table table-bordered table-striped table-hover">
-    <tr>
-        <th>Phone Number</th>
-        <th>Actions</th>
-    </tr>
-    @foreach (var item in Model.Phones)
-    {
-        <tr>
-            <td>@item.PhoneNumber</td>
-            <td class="text-center">
-                @*  <a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a>
-                    <a asp-controller="Contact" asp-action="Update" asp-route-id="@item.Id" class="badge badge-group-sm badge-warning">Edit</a>
-                    <a asp-controller="Contact" asp-action="Delete" asp-route-id="@item.Id" class="badge badge-group-sm badge-danger">Delete</a>
-                *@
-                <a class="btn-sm btn-outline-secondary" asp-controller="Phone" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
-                <a class="btn-sm btn-outline-primary" asp-controller="Phone" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
-                <a class="btn-sm btn-outline-danger" asp-controller="Phone" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
-            </td>
-        </tr>
-    }
-</table>
-
+@*Phones and Tags*@
+<div class="d-flex bd-highlight border flex-wrap justify-content-around">
+    <div class="p-2 bd-highlight flex-grow-1 ">
+        <div>
+            @foreach (var item in Model.Phones)
+            {
+                <div class="d-flex">
+                    <div class="mr-auto p-2">
+                        <div>
+                            <b>PhoneNumber : </b>@item.PhoneNumber <span class="badge badge-dark">@item.PhoneType.Name</span>
+                        </div>
+                    </div>
+                    <div class="ml-auto p-2">
+                        <a class="btn-sm btn-outline-primary" asp-controller="Tag" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                        <a class="btn-sm btn-outline-danger" asp-controller="Tag" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</div>

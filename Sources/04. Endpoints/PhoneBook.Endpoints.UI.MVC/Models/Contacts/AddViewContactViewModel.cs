@@ -1,4 +1,5 @@
-﻿using PhoneBook.Core.Entities.Tags;
+﻿using PhoneBook.Core.Entities.Phones;
+using PhoneBook.Core.Entities.Tags;
 using System.ComponentModel.DataAnnotations;
 
 namespace PhoneBook.Endpoints.UI.MVC.Models.Contacts;
@@ -23,12 +24,17 @@ public abstract class AddNewContactViewModel
 
     public IFormFile Image { get; set; }
 
+    public string PhoneNumber { get; set; }
+
 }
 public class AddNewContactDisplayViewModel : AddNewContactViewModel
 {
     public List<Tag> TagsForDisplay { get; set; } = new List<Tag>();
+    public List<PhoneType> PhoneTypesForDisplay { get; set; } = new List<PhoneType>();
+
 }
 public class AddNewContactGetViewModel : AddNewContactViewModel
 {
     public List<int> SelectedTag { get; set; } = new List<int>();
+    public List<int> SelectedPhoneType { get; set; } = new List<int>();
 }

@@ -16,7 +16,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     FirstName = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     LastName = table.Column<string>(type: "nvarchar(200)", maxLength: 200, nullable: false),
-                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: true),
+                    Email = table.Column<string>(type: "nvarchar(100)", maxLength: 100, nullable: false),
                     Address = table.Column<string>(type: "nvarchar(500)", maxLength: 500, nullable: true),
                     Image = table.Column<string>(type: "nvarchar(max)", nullable: false)
                 },
@@ -59,7 +59,7 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     PhoneNumber = table.Column<string>(type: "nvarchar(15)", maxLength: 15, nullable: false),
                     PhoneTypeId = table.Column<int>(type: "int", nullable: false),
-                    ContactId = table.Column<int>(type: "int", nullable: true)
+                    ContactId = table.Column<int>(type: "int", nullable: false)
                 },
                 constraints: table =>
                 {
@@ -68,7 +68,8 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         name: "FK_Phones_Contacts_ContactId",
                         column: x => x.ContactId,
                         principalTable: "Contacts",
-                        principalColumn: "Id");
+                        principalColumn: "Id",
+                        onDelete: ReferentialAction.Cascade);
                     table.ForeignKey(
                         name: "FK_Phones_PhoneTypes_PhoneTypeId",
                         column: x => x.PhoneTypeId,
@@ -119,14 +120,10 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                 columns: new[] { "Id", "Name" },
                 values: new object[,]
                 {
-                    { 1, "Father" },
-                    { 2, "Mother" },
-                    { 3, "Brother" },
-                    { 4, "Sister" },
-                    { 5, "Family" },
-                    { 6, "Friends" },
-                    { 7, "Colleague" },
-                    { 8, "Classmate" }
+                    { 1, "Family" },
+                    { 2, "Friends" },
+                    { 3, "Colleague" },
+                    { 4, "Classmate" }
                 });
 
             migrationBuilder.CreateIndex(

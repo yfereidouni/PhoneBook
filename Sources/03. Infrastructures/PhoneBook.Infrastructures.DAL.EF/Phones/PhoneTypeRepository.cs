@@ -13,5 +13,15 @@ public class PhoneTypeRepository : BaseEntityRepository<PhoneType>, IPhoneTypeRe
 {
     public PhoneTypeRepository(PhoneBookDbContext phoneBookDbContext) : base(phoneBookDbContext)
     {
+
+    }
+    public List<PhoneType> GetByContactIdWithPhoneType(int contactId)
+    {
+        return phoneBookDbContext.Phones.Where(c => c.ContactId == contactId).Select(c => c.PhoneType).ToList();
+    }
+
+    public List<Phone> Where(Func<Phone, bool> func)
+    {
+        return phoneBookDbContext.Phones.Where(func).ToList();
     }
 }

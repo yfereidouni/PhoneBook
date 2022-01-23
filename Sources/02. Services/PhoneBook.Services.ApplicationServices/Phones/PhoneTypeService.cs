@@ -38,6 +38,21 @@ namespace PhoneBook.Services.ApplicationServices.Phones
             return phoneTypeRepository.GetAll();
         }
 
+        public List<PhoneType> GetAllContactPhoneTypes(List<Phone> tags)
+        {
+            List<PhoneType> resultTags = new List<PhoneType>();
+            for (int i = 0; i < tags.Count; i++)
+            {
+                resultTags.Add(phoneTypeRepository.FindById(tags[i].PhoneTypeId));
+            }
+            return resultTags;
+        }
+
+        public List<PhoneType> GetContactPhoneTypesByContactId(int contactId)
+        {
+            return GetAllContactPhoneTypes(phoneTypeRepository.Where(c => c.ContactId == contactId));
+        }
+
         public void Update(PhoneType entity)
         {
             phoneTypeRepository.Update(entity);

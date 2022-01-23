@@ -7,4 +7,4 @@ build_property.InvariantGlobalization =
 build_property.PlatformNeutralAssembly = 
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = PhoneBook.Core.Entities
-build_property.ProjectDir = C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\
+build_property.ProjectDir = C:\Users\yasser.fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Entities\

@@ -10,5 +10,6 @@ namespace PhoneBook.Core.Contracts.Contacts;
 
 public interface IPhoneTypeRepository : IBaseEntityRepository<PhoneType>
 {
-
+    List<PhoneType> GetByContactIdWithPhoneType(int contactId);
+    List<Phone> Where(Func<Phone, bool> func);
 }

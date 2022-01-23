@@ -14,13 +14,13 @@ public class TagConfiguration : IEntityTypeConfiguration<Tag>
     public void Configure(EntityTypeBuilder<Tag> builder)
     {
         builder.Property(c => c.Name).HasMaxLength(100).IsRequired();
-        builder.HasData(new Tag() { Id = 1, Name = "Father" });
-        builder.HasData(new Tag() { Id = 2, Name = "Mother" });
-        builder.HasData(new Tag() { Id = 3, Name = "Brother" });
-        builder.HasData(new Tag() { Id = 4, Name = "Sister" });
-        builder.HasData(new Tag() { Id = 5, Name = "Family" });
-        builder.HasData(new Tag() { Id = 6, Name = "Friends" });
-        builder.HasData(new Tag() { Id = 7, Name = "Colleague" });
-        builder.HasData(new Tag() { Id = 8, Name = "Classmate" });
+        builder.HasData(new Tag() { Id = 1, Name = "Family" });
+        builder.HasData(new Tag() { Id = 2, Name = "Friends" });
+        builder.HasData(new Tag() { Id = 3, Name = "Colleague" });
+        builder.HasData(new Tag() { Id = 4, Name = "Classmate" });
+        //builder.HasData(new Tag() { Id = 5, Name = "Father" });
+        //builder.HasData(new Tag() { Id = 5, Name = "Mother" });
+        //builder.HasData(new Tag() { Id = 7, Name = "Brother" });
+        //builder.HasData(new Tag() { Id = 8, Name = "Sister" });
     }
 }
