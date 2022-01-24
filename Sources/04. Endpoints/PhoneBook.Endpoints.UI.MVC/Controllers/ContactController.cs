@@ -52,9 +52,9 @@ public class ContactController : Controller
                 LastName = model.LastName,
                 Address = model.Address,
                 Email = model.Email,
-                Phones = new List<Phone>(model.SelectedPhoneType.Select(c => new Phone 
-                { 
-                    PhoneNumber=model.PhoneNumber,
+                Phones = new List<Phone>(model.SelectedPhoneType.Select(c => new Phone
+                {
+                    PhoneNumber = model.PhoneNumber,
                     PhoneTypeId = c
                 }).ToList()),
                 Tags = new List<ContactTag>(model.SelectedTag.Select(c => new ContactTag
@@ -62,7 +62,7 @@ public class ContactController : Controller
                     TagId = c
                 }).ToList())
             };
-            
+
             if (model.Image.Length > 0)
             {
                 using (var ms = new MemoryStream())
@@ -101,7 +101,7 @@ public class ContactController : Controller
     {
         ViewBag.PageTitle = "Details of Contact";
 
-        var contact = contactService.GetPersonWithChilds(id);
+        var contact = contactService.GetContactWithChilds(id);
         if (contact != null)
         {
             var model = new ContactDetailsViewModel
@@ -120,5 +120,61 @@ public class ContactController : Controller
             return View(model);
         }
         return View();
+    }
+
+    public IActionResult Update(int id)
+    {
+        ViewBag.PageTitle = "Edit Contact";
+
+        var contact = contactService.FindById(id);
+
+        EditViewContactViewModel model = new()
+        {
+            Id = contact.Id,
+            FirstName = contact.FirstName,
+            LastName = contact.LastName,
+            Email = contact.Email,
+            Address = contact.Address,
+            CurrentImage = contact.Image
+            //Image = String.Format("data:image/gif;base64,{0}", contact.Image)
+        };
+
+        //byte[] bytes = Convert.FromBase64String(contact.Image);
+        //MemoryStream stream = new MemoryStream(bytes);
+        //////model.Image = new FormFile(stream, 0, bytes.Length, contact.Image, contact.Image);
+        //model.Image = new FormFile(stream, 0, stream.Length,"","");
+
+
+        return View(model);
+    }
+
+    [HttpPost]
+    public IActionResult Update(EditViewContactViewModel model)
+    {
+        var contact = contactService.FindById(model.Id);
+
+        if (ModelState.IsValid)
+        {
+            contact.FirstName = model.FirstName;
+            contact.LastName = model.LastName;
+            contact.Address = model.Address;
+            contact.Email = model.Email;
+
+            if (model.Image.Length > 0)
+            {
+                using (var ms = new MemoryStream())
+                {
+                    model.Image.CopyTo(ms);
+                    var fileBytes = ms.ToArray();
+                    contact.Image = Convert.ToBase64String(fileBytes);
+                }
+            }
+
+            contactService.Update(contact);
+
+            return RedirectToAction("Index");
+        }
+
+        return View(model);
     }
 }

@@ -27,6 +27,7 @@ public abstract class BaseEntityRepository<TEntity> : IBaseEntityRepository<TEnt
     public void Update(TEntity entity)
     {
         phoneBookDbContext.Set<TEntity>().Update(entity);
+        phoneBookDbContext.SaveChanges();
     }
 
     public void Delete(TEntity entity)

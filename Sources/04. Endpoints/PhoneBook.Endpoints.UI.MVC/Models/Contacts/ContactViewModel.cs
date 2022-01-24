@@ -4,6 +4,7 @@ namespace PhoneBook.Endpoints.UI.MVC.Models.Contacts
 {
     public class ContactViewModel
     {
+        public int Id { get; set; }
         //[Display(Name = "نام")]
         //[Required(ErrorMessage = "وارد کردن {0} الزامی است")]
         //[StringLength(50, MinimumLength = 2)]

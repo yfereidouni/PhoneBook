@@ -25,13 +25,11 @@ public abstract class AddNewContactViewModel
     public IFormFile Image { get; set; }
 
     public string PhoneNumber { get; set; }
-
 }
 public class AddNewContactDisplayViewModel : AddNewContactViewModel
 {
     public List<Tag> TagsForDisplay { get; set; } = new List<Tag>();
     public List<PhoneType> PhoneTypesForDisplay { get; set; } = new List<PhoneType>();
-
 }
 public class AddNewContactGetViewModel : AddNewContactViewModel
 {

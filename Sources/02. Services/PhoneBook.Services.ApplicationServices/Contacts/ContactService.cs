@@ -43,7 +43,7 @@ public class ContactService : IContactService
         contactRepository.Update(entity);
     }
     
-    public Contact GetPersonWithChilds(int contactId)
+    public Contact GetContactWithChilds(int contactId)
     {
         return contactRepository.GetContactWithPhones(contactId);
     }
