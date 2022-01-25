@@ -17,5 +17,6 @@ public class ContactConfiguration : IEntityTypeConfiguration<Contact>
         builder.Property(c => c.LastName).HasMaxLength(200).IsRequired();
         builder.Property(c => c.Email).HasMaxLength(100).IsRequired();
         builder.Property(c => c.Address).HasMaxLength(500).IsRequired(false);
+        builder.Property(c => c.Image).IsRequired(false);
     }
 }

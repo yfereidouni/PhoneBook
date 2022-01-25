@@ -1,4 +1,6 @@
-﻿namespace PhoneBook.Endpoints.UI.MVC.Models.Contacts;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace PhoneBook.Endpoints.UI.MVC.Models.Contacts;
 
 public class EditViewContactViewModel
 {
@@ -12,7 +14,9 @@ public class EditViewContactViewModel
 
     public string Address { get; set; }
 
+    [Required(AllowEmptyStrings = true)]
     public string CurrentImage { get; set; }
+
     public IFormFile Image { get; set; }
 }
 
