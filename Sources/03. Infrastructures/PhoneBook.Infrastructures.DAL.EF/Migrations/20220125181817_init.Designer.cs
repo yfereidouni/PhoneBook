@@ -11,7 +11,7 @@ using PhoneBook.Infrastructures.DAL.EF.Common;
 namespace PhoneBook.Infrastructures.DAL.EF.Migrations
 {
     [DbContext(typeof(PhoneBookDbContext))]
-    [Migration("20220123111338_init")]
+    [Migration("20220125181817_init")]
     partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -46,7 +46,6 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")

@@ -44,7 +44,6 @@ namespace PhoneBook.Infrastructures.DAL.EF.Migrations
                         .HasColumnType("nvarchar(100)");
 
                     b.Property<string>("Image")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("LastName")
