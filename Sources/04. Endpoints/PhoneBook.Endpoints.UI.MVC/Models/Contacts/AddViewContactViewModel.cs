@@ -8,23 +8,24 @@ public abstract class AddNewContactViewModel
 {
     [Required]
     [StringLength(100, MinimumLength = 2)]
-    public string FirstName { get; set; }
+    public string FirstName { get; set; } = "";
 
     [Required]
     [StringLength(200, MinimumLength = 2)]
-    public string LastName { get; set; }
+    public string LastName { get; set; } = "";
 
     [Required]
     [EmailAddress]
     [StringLength(100, MinimumLength = 3)]
-    public string Email { get; set; }
+    public string Email { get; set; } = "";
 
     [StringLength(500)]
     public string? Address { get; set; }
 
     public IFormFile Image { get; set; }
 
-    public string PhoneNumber { get; set; }
+    [StringLength(15)]
+    public string PhoneNumber { get; set; } = "";
 }
 public class AddNewContactDisplayViewModel : AddNewContactViewModel
 {
