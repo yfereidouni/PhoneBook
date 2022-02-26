@@ -153,7 +153,7 @@ public class ContactController : Controller
     {
         var contact = contactService.FindById(model.Id);
 
-        ModelState.Remove("CurrentImage"); // to omit SomeValue Validation Error
+        ModelState.Remove("CurrentImage"); // to omit CurrentImage Validation Error
 
         if (ModelState.IsValid)
         {
