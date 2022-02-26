@@ -47,6 +47,26 @@
         </div>
     </li>
 
+
+    <!-- Nav Item - Users Management Collapse Menu -->
+    <li class="nav-item">
+        <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUsers"
+           aria-expanded="true" aria-controls="collapseUsers">
+            <i class="fas fa-shield-alt"></i>
+            <span>Users</span>
+        </a>
+        <div id="collapseUsers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">
+                <h6 class="collapse-header">Users:</h6>
+                <a class="collapse-item" asp-controller="User" asp-action="Add">Add</a>
+                <a class="collapse-item" asp-controller="User" asp-action="Update">Update</a>
+                <a class="collapse-item" asp-controller="User" asp-action="Delete">Delete</a>
+                <a class="collapse-item" asp-controller="User" asp-action="Index">List</a>
+            </div>
+        </div>
+    </li>
+
+
     <!-- Nav Item - Utilities Collapse Menu -->
     <li class="nav-item">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#collapseUtilities"

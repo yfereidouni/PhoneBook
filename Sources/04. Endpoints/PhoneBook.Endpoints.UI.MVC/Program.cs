@@ -1,7 +1,9 @@
+using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 using PhoneBook.Core.Contracts.Contacts;
 using PhoneBook.Core.Contracts.Phones;
 using PhoneBook.Core.Contracts.Tags;
+using PhoneBook.Endpoints.UI.MVC.Models.AAA;
 using PhoneBook.Infrastructures.DAL.EF.Common;
 using PhoneBook.Infrastructures.DAL.EF.Contacts;
 using PhoneBook.Infrastructures.DAL.EF.Phones;
@@ -19,7 +21,12 @@ builder.Services.AddMvc(option => option.EnableEndpointRouting = false);
 
 builder.Services.AddDbContext<PhoneBookDbContext>(options => options
                 .UseSqlServer(builder.Configuration
-                .GetConnectionString("PhoneBook_ConnectionString")));
+                .GetConnectionString("PhoneBook_DB_ConnectionString")));
+
+builder.Services.AddDbContext<UserDbContext>(options => options
+                .UseSqlServer(builder.Configuration
+                .GetConnectionString("PhoneBook_AAA_ConnectionString")));
+
 
 //Repository
 builder.Services.AddScoped<IContactRepository, ContactRepository>();
@@ -33,6 +40,7 @@ builder.Services.AddScoped<IContactService, ContactService>();
 builder.Services.AddScoped<IPhoneService, PhoneService>();
 builder.Services.AddScoped<IPhoneTypeService, PhoneTypeService>();
 builder.Services.AddScoped<ITagService, TagService>();
+builder.Services.AddIdentity<AppUser, IdentityRole>().AddEntityFrameworkStores<UserDbContext>();
 
 
 var app = builder.Build();
@@ -49,6 +57,8 @@ app.UseHttpsRedirection();
 app.UseStaticFiles();
 
 app.UseRouting();
+
+app.UseAuthentication();
 
 app.UseAuthorization();
 
