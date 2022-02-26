@@ -14,10 +14,10 @@ public class EditViewContactViewModel
 
     public string Address { get; set; }
 
-    [Required(AllowEmptyStrings = true)]
+    //[Required(AllowEmptyStrings = true)]
     public string CurrentImage { get; set; }
 
-    public IFormFile Image { get; set; }
+    public IFormFile? Image { get; set; }
 }
 
 

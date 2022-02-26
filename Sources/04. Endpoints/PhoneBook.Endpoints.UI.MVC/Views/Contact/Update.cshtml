@@ -18,12 +18,12 @@
                 <div asp-for="Image">
                     <img id="blah" src="@imgSrc" height="150" width="150" class="img-thumbnail rounded-circle" alt="@fullName" />
                 </div>
-                @*<label asp-for="Image">Image</label>*@
-                <div class="p-2">
-                    <input id="imgInp" type="file" accept="image/*" asp-for="Image" name="Image" class="form-control" />
-                    <span asp-validation-for="Image"></span>
-                </div>
+            </div>
 
+            <div class="form-group">
+                <label asp-for="Image"></label>
+                <input id="imgInp" type="file" accept="image/*" asp-for="Image" name="Image" class="form-control" />
+                <span asp-validation-for="Image"></span>
             </div>
 
             <div class="form-group">
@@ -79,7 +79,6 @@
                 blah.src = URL.createObjectURL(file)
             }
         }
-
     });
 </script>
 }

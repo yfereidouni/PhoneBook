@@ -161,14 +161,16 @@ public class ContactController : Controller
             contact.LastName = model.LastName;
             contact.Address = model.Address;
             contact.Email = model.Email;
-
-            if (model.Image.Length > 0)
+            if (model.Image != null)
             {
-                using (var ms = new MemoryStream())
+                if (model.Image.Length > 0)
                 {
-                    model.Image.CopyTo(ms);
-                    var fileBytes = ms.ToArray();
-                    contact.Image = Convert.ToBase64String(fileBytes);
+                    using (var ms = new MemoryStream())
+                    {
+                        model.Image.CopyTo(ms);
+                        var fileBytes = ms.ToArray();
+                        contact.Image = Convert.ToBase64String(fileBytes);
+                    }
                 }
             }
 

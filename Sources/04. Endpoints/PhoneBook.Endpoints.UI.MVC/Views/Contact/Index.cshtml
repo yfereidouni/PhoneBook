@@ -38,14 +38,14 @@
                                     var imgSrc = String.Format("data:image/gif;base64,{0}", item.Image);
                                     var fullName = item.FirstName + " " + item.LastName;
                                 }
-                                <td>
+                                <td class="align-middle text-center">
                                     <img src="@imgSrc" height="75" width="75" class="img-thumbnail rounded-circle" alt="@fullName" />
                                 </td>
-                                <td>@item.FirstName</td>
-                                <td>@item.LastName</td>
-                                <td>@item.Email</td>
-                                <td>@item.Address</td>
-                                <td class="text-center">
+                                <td class="align-middle">@item.FirstName</td>
+                                <td class="align-middle">@item.LastName</td>
+                                <td class="align-middle">@item.Email</td>
+                                <td class="align-middle">@item.Address</td>
+                                <td class="align-middle text-center">
                                     @*  <a asp-controller="Contact" asp-action="Detail" asp-route-id="@item.Id" class="badge badge-group-sm badge-primary">Detail</a>
                                         <a asp-controller="Contact" asp-action="Update" asp-route-id="@item.Id" class="badge badge-group-sm badge-warning">Edit</a>
                                         <a asp-controller="Contact" asp-action="Delete" asp-route-id="@item.Id" class="badge badge-group-sm badge-danger">Delete</a>
