@@ -131,5 +131,20 @@
     </div>
 </div>
 
+@section scripts
+{
+<script src="~/vendor/select2/dist/js/select2.min.js"></script>
+<script>
+    $(document).ready(function () {
 
+        $(".collapse-item").click(function() {
+            $(this).addClass("active");
+        });
+
+        if (!$("#collapseContacts").hasClass("show")) {
+            $("#collapseContacts").addClass("show");   
+        }
+    });
+</script>
+}
 

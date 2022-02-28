@@ -111,6 +111,11 @@
         $(".collapse-item").click(function() {
             $(this).addClass("active");
         });
+
+        if (!$("#collapseContacts").hasClass("show")) {
+            $("#collapseContacts").addClass("show");   
+        }
     });
 </script>
 }
+

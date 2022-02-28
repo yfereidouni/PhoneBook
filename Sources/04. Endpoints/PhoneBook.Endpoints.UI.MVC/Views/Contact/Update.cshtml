@@ -73,6 +73,10 @@
             $(this).addClass("active");
         });
 
+        if (!$("#collapseContacts").hasClass("show")) {
+            $("#collapseContacts").addClass("show");   
+        }
+
         imgInp.onchange = evt => {
             const [file] = imgInp.files
             if (file) {
