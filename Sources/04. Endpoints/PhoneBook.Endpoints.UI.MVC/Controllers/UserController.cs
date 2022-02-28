@@ -5,9 +5,9 @@ using PhoneBook.Endpoints.UI.MVC.Models.AAA;
 namespace PhoneBook.Endpoints.UI.MVC.Controllers
 {
     public class UserController : Controller
-    {    
+    {
         private readonly UserManager<AppUser> userManager;
-         
+
         public UserController(UserManager<AppUser> userManager)
         {
             this.userManager = userManager;
@@ -28,14 +28,82 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             return View();
         }
 
-        public IActionResult Update()
+        [HttpPost]
+        public IActionResult Add(CreateUserViewModel model)
         {
-            return View();
+            if (ModelState.IsValid)
+            {
+                AppUser user = new AppUser
+                {
+                    UserName = model.Username,
+                    Email = model.Email,
+                };
+                var result = userManager.CreateAsync(user, model.Password).Result;
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                        ModelState.AddModelError(item.Code, item.Description);
+                    }
+                }
+            }
+
+            return View(model);
         }
+
+        public IActionResult Update(string id)
+        {
+            ViewBag.PageTitle = "Update User";
+
+            var user = userManager.FindByIdAsync(id).Result;
+
+            UpdateUserViewModel model = new UpdateUserViewModel
+            {
+                Id = id,
+                Email = user.Email,
+                Username = user.UserName,
+            };
+
+            return View(model);
+        }
+
+        [HttpPost]
+        public IActionResult Update(string id, UpdateUserViewModel model)
+        {
+            var user = userManager.FindByIdAsync(id).Result;
+
+            if (user!=null)
+            {
+
+                user.Email = model.Email;
+                //user.Id = id;
+                
+
+                var result = userManager.UpdateAsync(user).Result;
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                        ModelState.AddModelError(item.Code, item.Description);
+                    }
+                }
+            }
+            return View(model);
+        }
+
         public IActionResult Delete()
         {
             return View();
         }
-    }    
-}        
-         
+    }
+}
