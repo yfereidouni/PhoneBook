@@ -56,6 +56,22 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             return View(model);
         }
 
+        public IActionResult Detail(string id)
+        {
+            ViewBag.PageTitle = "User Details";
+
+            var user = userManager.FindByIdAsync(id).Result;
+
+            DetailUserViewModel model = new DetailUserViewModel
+            {
+                Id = id,
+                Email = user.Email,
+                Username = user.UserName,
+            };
+
+            return View(model);
+        }
+
         public IActionResult Update(string id)
         {
             ViewBag.PageTitle = "Update User";
@@ -77,12 +93,9 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
         {
             var user = userManager.FindByIdAsync(id).Result;
 
-            if (user!=null)
+            if (user != null)
             {
-
                 user.Email = model.Email;
-                //user.Id = id;
-                
 
                 var result = userManager.UpdateAsync(user).Result;
 
@@ -101,8 +114,26 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             return View(model);
         }
 
-        public IActionResult Delete()
+        public IActionResult Delete(string id)
         {
+            var user = userManager.FindByIdAsync(id).Result;
+
+            if (user != null)
+            {
+                var result = userManager.DeleteAsync(user).Result;
+
+                if (result.Succeeded)
+                {
+                    return RedirectToAction("Index");
+                }
+                else
+                {
+                    foreach (var item in result.Errors)
+                    {
+                        ModelState.AddModelError(item.Code, item.Description);
+                    }
+                }
+            }
             return View();
         }
     }
