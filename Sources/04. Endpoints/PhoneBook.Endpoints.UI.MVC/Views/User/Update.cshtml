@@ -46,3 +46,22 @@
 
     </div>
 </div>
+
+
+
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+        $(".collapse-item").click(function() {
+            $(this).addClass("active");
+            
+        });
+        
+        if (!$("#collapseUsers").hasClass("show")) {
+            $("#collapseUsers").addClass("show");   
+        }
+
+    });
+</script>
+}
