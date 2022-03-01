@@ -113,7 +113,7 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             }
             return View(model);
         }
-
+        
         public IActionResult Delete(string id)
         {
             var user = userManager.FindByIdAsync(id).Result;
@@ -134,6 +134,7 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
                     }
                 }
             }
+
             return View();
         }
     }
