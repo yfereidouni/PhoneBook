@@ -96,6 +96,7 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             if (user != null)
             {
                 user.Email = model.Email;
+                user.UserName = model.Username;
 
                 var result = userManager.UpdateAsync(user).Result;
 
@@ -113,7 +114,7 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             }
             return View(model);
         }
-        
+
         public IActionResult Delete(string id)
         {
             var user = userManager.FindByIdAsync(id).Result;

@@ -19,6 +19,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.AddMvc(option => option.EnableEndpointRouting = false);
 
+//Using "appsetings.jason" configurations
+int minPasswordLength = int.Parse(builder.Configuration["MinPasswprdLength"]);
+
 builder.Services.AddDbContext<PhoneBookDbContext>(options => options
                 .UseSqlServer(builder.Configuration
                 .GetConnectionString("PhoneBook_DB_ConnectionString")));
@@ -43,21 +46,22 @@ builder.Services.AddScoped<ITagService, TagService>();
 
 //Password
 //builder.Services.AddScoped<IPasswordValidator<AppUser>, MyPassordValidator>();
-builder.Services.AddScoped<PasswordValidator<AppUser>, MyPassordValidator2>();
+builder.Services.AddScoped<IPasswordValidator<AppUser>, MyPassordValidator2>();
 
 //Username
 //builder.Services.AddScoped<IUserValidator<AppUser>, MyUserValidator>();
-builder.Services.AddScoped<UserValidator<AppUser>, MyUserValidator2>();
+builder.Services.AddScoped<IUserValidator<AppUser>, MyUserValidator2>();
 
 builder.Services.AddIdentity<AppUser, IdentityRole>(c =>
 {
     //User configurations:
     c.User.RequireUniqueEmail = true;
-    c.User.AllowedUserNameCharacters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM.";
+    c.User.AllowedUserNameCharacters = "qwertyuiopasdfghjklzxcvbnmQWERTYUIOPASDFGHJKLZXCVBNM." +
+                                       "1234567890";
 
     //Password configurations:
     c.Password.RequireDigit = false;
-    c.Password.RequiredLength = 6;
+    c.Password.RequiredLength = minPasswordLength;
     c.Password.RequireNonAlphanumeric=false;
     c.Password.RequireUppercase=false;
     c.Password.RequiredUniqueChars = 1;
@@ -77,6 +81,7 @@ if (!app.Environment.IsDevelopment())
 }
 
 app.UseHttpsRedirection();
+
 app.UseStaticFiles();
 
 app.UseRouting();
