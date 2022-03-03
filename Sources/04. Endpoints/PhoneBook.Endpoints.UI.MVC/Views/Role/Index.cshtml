@@ -1,0 +1,75 @@
+﻿@model List<Microsoft.AspNetCore.Identity.IdentityRole>
+
+@if (Model != null && Model.Count > 0)
+{
+    <div class="card shadow mb-4">
+        <div class="card-header py-3">
+            <h6 class="m-0 font-weight-bold text-primary">Roles Information</h6>
+        </div>
+        <div class="card-body">
+            <div class="table-responsive">
+                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
+                    <thead>
+                        <tr>
+                            <th class="col-sm-6 col-md-6 col-lg-9 align-middle">RoleName</th>
+                            <th class="col-sm-6 col-md-6 col-lg-3 align-middle text-center">Actions</th>
+                        </tr>
+                    </thead>
+                    
+                    <tbody>
+                        @foreach (var item in Model)
+                        {
+                            <tr>
+                                <td class="align-middle">@item.Name</td>
+                                <td class="align-middle text-center">
+                                    <a class="btn-sm btn-outline-primary" asp-controller="Role" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
+                                    <a class="btn-sm btn-outline-danger" asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                                </td>
+                                @*<td class="align-middle text-center">
+                                    <button class="btn btn-primary" asp-controller="Role" asp-action="Update" asp-route-id="@item.Id">Edit</button>
+                                    <button class="btn btn-danger" asp-controller="Role" asp-action="Delete" asp-route-id="@item.Id">Delete</button>
+                                    <button class="btn btn-success" asp-controller="Role" asp-action="Detail" asp-route-id="@item.Id">Add to User</button>
+                                </td>*@
+                            </tr>
+                        }
+                    </tbody>
+                </table>
+            </div>
+            
+            <a class="btn btn-primary" asp-controller="Role" asp-action="Add">Add new role</a>
+
+        </div>
+    </div>
+
+}
+else
+{
+    @*<div class="alert alert-info" role="alert">
+        There is no any recored in DB.
+        </div>*@
+
+    <div class="alert alert-info alert-dismissible fade show" role="alert">
+        <strong>Notice!</strong> There is no any recored in DB.
+        <button type="button" class="close" data-dismiss="alert" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+        </button>
+    </div>
+}
+
+
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+        $(".collapse-item").click(function() {
+            $(this).addClass("active");
+            
+        });
+        
+        if (!$("#collapseRoles").hasClass("show")) {
+            $("#collapseRoles").addClass("show");   
+        }
+
+    });
+</script>
+}

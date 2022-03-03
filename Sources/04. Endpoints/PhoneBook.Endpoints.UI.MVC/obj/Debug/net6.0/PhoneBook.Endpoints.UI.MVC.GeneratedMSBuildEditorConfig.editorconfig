@@ -15,6 +15,10 @@ build_property.GenerateRazorMetadataSourceChecksumAttributes =
 build_property.MSBuildProjectDirectory = C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC
 build_property._RazorSourceGeneratorDebug = 
 
+[C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Contact/Add.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQ29udGFjdFxBZGQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -37,6 +41,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Home/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxfVmlld1N0YXJ0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Role/Add.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxBZGQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Role/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Role/Update.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUm9sZVxVcGRhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Fereidouni/source/repos/PhoneBook/Sources/04. Endpoints/PhoneBook.Endpoints.UI.MVC/Views/Shared/_ContentRows.cshtml]

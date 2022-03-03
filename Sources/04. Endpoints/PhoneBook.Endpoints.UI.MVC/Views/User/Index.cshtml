@@ -8,13 +8,13 @@
         </div>
         <div class="card-body">
             <div class="table-responsive">
-                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                <table class="table table-bordered table-hover" id="dataTable" width="100%" cellspacing="0">
                     <thead>
                         <tr>
                             @*<th>Id</th>*@
                             <th>Username</th>
                             <th>Email</th>
-                            <th>Actions</th>
+                            <th class="align-middle text-center">Actions</th>
                         </tr>
                     </thead>
                     <tbody>
@@ -28,6 +28,7 @@
                                     <a class="btn-sm btn-outline-secondary" asp-controller="User" asp-action="Detail" asp-route-id="@item.Id"><i class="far fa-address-card"></i></a>
                                     <a class="btn-sm btn-outline-primary" asp-controller="User" asp-action="Update" asp-route-id="@item.Id"><i class="fa fa-edit"></i></a>
                                     <a class="btn-sm btn-outline-danger" asp-controller="User" asp-action="Delete" asp-route-id="@item.Id"><i class="fa fa-trash"></i></a>
+                                    <button class="btn btn-primary btn-sm" asp-controller="User" asp-action="AddToRole" asp-route-id="@item.Id" asp-route-roleName="Admin">Make Admin</button>
                                 </td>
                             </tr>
                         }

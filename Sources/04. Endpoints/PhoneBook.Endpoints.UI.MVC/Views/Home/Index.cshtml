@@ -6,6 +6,12 @@
 	        $(this).addClass("active");
         });
 
+        $(".nav-item").click(function() {
+            if(!(this).hasClass("active")) {
+                $(".nav-item").addClass("active");   
+            }
+        });
+        
     });
 </script>
 }

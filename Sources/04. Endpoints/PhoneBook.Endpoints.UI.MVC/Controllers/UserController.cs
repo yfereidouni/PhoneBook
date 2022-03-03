@@ -1,9 +1,11 @@
-﻿using Microsoft.AspNetCore.Identity;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Endpoints.UI.MVC.Models.AAA;
 
 namespace PhoneBook.Endpoints.UI.MVC.Controllers
 {
+    [Authorize(Roles ="Admin")]
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> userManager;
@@ -137,6 +139,18 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
             }
 
             return View();
+        }
+
+        public IActionResult AddToRole(string id, string roleName)
+        {
+            var user = userManager.FindByIdAsync(id).Result;
+
+            if (user != null)
+            {
+                var result = userManager.AddToRoleAsync(user, roleName).Result;
+            }
+
+            return RedirectToAction("Index");
         }
     }
 }

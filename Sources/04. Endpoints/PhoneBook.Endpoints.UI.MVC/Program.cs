@@ -52,6 +52,7 @@ builder.Services.AddScoped<IPasswordValidator<AppUser>, MyPassordValidator2>();
 //builder.Services.AddScoped<IUserValidator<AppUser>, MyUserValidator>();
 builder.Services.AddScoped<IUserValidator<AppUser>, MyUserValidator2>();
 
+
 builder.Services.AddIdentity<AppUser, IdentityRole>(c =>
 {
     //User configurations:

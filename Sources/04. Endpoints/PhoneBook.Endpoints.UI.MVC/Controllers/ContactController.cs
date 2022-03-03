@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
 using PhoneBook.Core.Contracts.Contacts;
 using PhoneBook.Core.Contracts.Phones;
 using PhoneBook.Core.Contracts.Tags;
@@ -8,6 +9,7 @@ using PhoneBook.Endpoints.UI.MVC.Models.Contacts;
 
 namespace PhoneBook.Endpoints.UI.MVC.Controllers;
 
+[Authorize]
 public class ContactController : Controller
 {
     private readonly IContactService contactService;

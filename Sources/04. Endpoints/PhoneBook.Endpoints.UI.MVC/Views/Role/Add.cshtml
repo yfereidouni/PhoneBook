@@ -1,0 +1,45 @@
+﻿@model Microsoft.AspNetCore.Identity.IdentityRole
+
+
+<div class="card shadow mb-4">
+    <div class="card-header py-3">
+        <h6 class="m-0 font-weight-bold text-primary">Role Information</h6>
+    </div>
+    <div class="card-body">
+
+        <form asp-controller="Role" asp-action="Add" method="post">
+            <div asp-validation-summary="All"></div>
+
+            <div class="form-group">
+                <label asp-for="Name">Name</label>
+                <input type="text" asp-for="Name" class="form-control" maxlength="100" />
+                <span asp-validation-for="Name"></span>
+            </div>
+            @*<div class="form-group">*@
+            @*<button type="button" class="btn btn-secondary" asp-controller="People" asp-action="Index">Cancel</button>*@
+            <input type="button" class="btn btn-secondary" value="Cancel" onclick="@("window.location.href='" + @Url.Action("Index", "Role") + "'");" />
+            <input type="submit" class="btn btn-success" value="Save" />
+            @*</div>*@
+
+        </form>
+
+    </div>
+</div>
+
+
+@section scripts
+{
+<script>
+    $(document).ready(function () {
+
+        $(".collapse-item").click(function() {
+            $(this).addClass("active");
+        });
+
+        if (!$("#collapseRoles").hasClass("show")) {
+            $("#collapseRoles").addClass("show");   
+        }
+    });
+</script>
+}
+

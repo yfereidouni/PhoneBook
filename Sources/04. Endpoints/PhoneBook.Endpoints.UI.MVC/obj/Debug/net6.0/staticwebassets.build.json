@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "C1xefG27WZ/Bz+sPfwBu/Y4M5zk+EV+Vc3/oDmSq3yA=",
+  "Hash": "5fjLdp+QVe7syC/nsHZGR67UrnrsRjojPOAq7wJ8BDI=",
   "Source": "PhoneBook.Endpoints.UI.MVC",
   "BasePath": "_content/PhoneBook.Endpoints.UI.MVC",
   "Mode": "Default",
@@ -100,6 +100,40 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon_old.ico"
+    },
+    {
+      "Identity": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\04. Endpoints\\PhoneBook.Endpoints.UI.MVC\\wwwroot\\img\\dropdown.jpg",
+      "SourceId": "PhoneBook.Endpoints.UI.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\04. Endpoints\\PhoneBook.Endpoints.UI.MVC\\wwwroot\\",
+      "BasePath": "_content/PhoneBook.Endpoints.UI.MVC",
+      "RelativePath": "img/dropdown.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\dropdown.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\04. Endpoints\\PhoneBook.Endpoints.UI.MVC\\wwwroot\\img\\login.jpg",
+      "SourceId": "PhoneBook.Endpoints.UI.MVC",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\04. Endpoints\\PhoneBook.Endpoints.UI.MVC\\wwwroot\\",
+      "BasePath": "_content/PhoneBook.Endpoints.UI.MVC",
+      "RelativePath": "img/login.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\login.jpg"
     },
     {
       "Identity": "C:\\Users\\Fereidouni\\source\\repos\\PhoneBook\\Sources\\04. Endpoints\\PhoneBook.Endpoints.UI.MVC\\wwwroot\\img\\login_Image_800x600.jpg",

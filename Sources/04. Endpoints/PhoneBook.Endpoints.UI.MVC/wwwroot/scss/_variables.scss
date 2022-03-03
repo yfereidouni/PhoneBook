@@ -80,6 +80,6 @@ $dropdown-border-color: $border-color !default;
 $register-image: 'https://source.unsplash.com/Mv9hjnEUHR4/600x800' !default;
 $password-image: 'https://source.unsplash.com/oWTW-jNGl9I/600x800' !default;
 */
-$login-image: "~/img/login_Image_800x600.jpg" !default;
-$register-image: "~/img/register_Image_800x600.jpg" !default;
-$password-image: "~/img/Password_Image_800x600.jpg" !default;
+$login-image: '../img/login_Image_800x600.jpg' !default;
+$register-image: '../img/register_Image_800x600.jpg' !default;
+$password-image: '../img/Password_Image_800x600.jpg' !default;
