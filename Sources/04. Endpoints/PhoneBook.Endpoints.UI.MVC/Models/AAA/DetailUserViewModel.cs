@@ -1,4 +1,5 @@
-﻿using System.ComponentModel.DataAnnotations;
+﻿using Microsoft.AspNetCore.Identity;
+using System.ComponentModel.DataAnnotations;
 
 namespace PhoneBook.Endpoints.UI.MVC.Models.AAA
 {
@@ -18,5 +19,8 @@ namespace PhoneBook.Endpoints.UI.MVC.Models.AAA
         [MaxLength(255)]
         [EmailAddress]
         public string Email { get; set; } = "";
+
+        public List<IdentityRole> RolesForDisplay { get; set; } = new List<IdentityRole>();
+
     }
 }

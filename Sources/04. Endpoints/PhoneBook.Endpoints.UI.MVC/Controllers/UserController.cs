@@ -1,18 +1,22 @@
 ﻿using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using PhoneBook.Endpoints.UI.MVC.Models.AAA;
 
 namespace PhoneBook.Endpoints.UI.MVC.Controllers
 {
-    [Authorize(Roles ="Admin")]
+    [Authorize(Roles = "Admin")]
     public class UserController : Controller
     {
         private readonly UserManager<AppUser> userManager;
+        private readonly RoleManager<IdentityRole> roleManager;
 
-        public UserController(UserManager<AppUser> userManager)
+        public UserController(UserManager<AppUser> userManager,
+                              RoleManager<IdentityRole> roleManager)
         {
             this.userManager = userManager;
+            this.roleManager = roleManager;
         }
 
         public IActionResult Index()
@@ -27,11 +31,21 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
         {
             ViewBag.PageTitle = "Add User";
 
-            return View();
+
+            AddNewUserDisplayViewModel model = new AddNewUserDisplayViewModel
+            {
+                RolesForDisplay = roleManager.Roles.Select(c=> new IdentityRole
+                {
+                    Id = c.Id,
+                    Name = c.Name,
+                }).ToList()
+            };
+
+            return View(model);
         }
 
         [HttpPost]
-        public IActionResult Add(CreateUserViewModel model)
+        public IActionResult Add(AddNewUserGetViewModel model)
         {
             if (ModelState.IsValid)
             {
@@ -40,10 +54,19 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
                     UserName = model.Username,
                     Email = model.Email,
                 };
+
                 var result = userManager.CreateAsync(user, model.Password).Result;
 
                 if (result.Succeeded)
                 {
+                    var roles = new List<string>(model.SelectedRoles.ToList());
+
+                    foreach (var item in roles)
+                    {
+                        var selectedRoleName = roleManager.FindByIdAsync(item).Result;
+                        var resultRole = userManager.AddToRoleAsync(user, selectedRoleName.Name).Result;
+                    }
+
                     return RedirectToAction("Index");
                 }
                 else
@@ -70,6 +93,9 @@ namespace PhoneBook.Endpoints.UI.MVC.Controllers
                 Email = user.Email,
                 Username = user.UserName,
             };
+
+            //Choose only related role of the user not all of roles stored in DB
+            model.RolesForDisplay = roleManager.Roles.ToList();            
 
             return View(model);
         }

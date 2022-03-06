@@ -1,6 +1,15 @@
 ﻿@model DetailUserViewModel
 
 
+@{
+    List<string> selectedRolesItems = (List<string>)ViewBag.SelectedRolesItems;
+}
+
+@section head
+{
+<link href="~/vendor/select2/dist/css/select2.min.css" rel="stylesheet" />
+}
+
 <div class="card shadow mb-4">
     <div class="card-header py-3">
         <h6 class="m-0 font-weight-bold text-primary">User Information</h6>
@@ -8,33 +17,47 @@
     <div class="card-body">
 
         @*<form asp-controller="User" asp-action="Add" method="post">*@
-            <div asp-validation-summary="All"></div>
+        <div asp-validation-summary="All"></div>
 
-           <div class="form-group">
-                <label asp-for="Id">Id</label>
-                <input type="text" readonly asp-for="Id" class="form-control" />
-                <span asp-validation-for="Id"></span>
-            </div>
+        <div class="form-group">
+            <label asp-for="Id">Id</label>
+            <input type="text" readonly asp-for="Id" class="form-control" />
+            <span asp-validation-for="Id"></span>
+        </div>
 
-            <div class="form-group">
-                <label asp-for="Username">Username</label>
-                <input type="text" readonly asp-for="Username" class="form-control" maxlength="200" />
-                <span asp-validation-for="Username"></span>
-            </div>
+        <div class="form-group">
+            <label asp-for="Username">Username</label>
+            <input type="text" readonly asp-for="Username" class="form-control" maxlength="200" />
+            <span asp-validation-for="Username"></span>
+        </div>
 
-            <div class="form-group">
-                <label asp-for="Email">Email</label>
-                <input type="text" readonly asp-for="Email" class="form-control" maxlength="100" />
-                <span asp-validation-for="Email"></span>
-            </div>
+        <div class="form-group">
+            <label asp-for="Email">Email</label>
+            <input type="text" readonly asp-for="Email" class="form-control" maxlength="100" />
+            <span asp-validation-for="Email"></span>
+        </div>
 
+        <div class="form-group">
+            <label asp-for="RolesForDisplay">Roles</label>
+            <select class="form-control select2" name="SelectedRoles" multiple>
+                @foreach (var item in Model.RolesForDisplay)
+                {
+                    if (ViewBag.SelectedRolesItems != null && selectedRolesItems.Contains(item.Id))
+                    {
+                        <option selected value="@item.Id">@item.Name</option>
+                    }
+                    else
+                    {
+                        <option value="@item.Id">@item.Name</option>
+                    }
+                }
+            </select>
+        </div>
 
-            <a class="btn btn-secondary" asp-controller="User" asp-action="Index" asp-route-id="@Model.Id">Return to list</a>
-            <a class="btn btn-primary" asp-controller="User" asp-action="Update" asp-route-id="@Model.Id">Update</a>
-            <a class="btn btn-danger" asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
+        <a class="btn btn-secondary" asp-controller="User" asp-action="Index" asp-route-id="@Model.Id">Return to list</a>
+        <a class="btn btn-primary" asp-controller="User" asp-action="Update" asp-route-id="@Model.Id">Update</a>
+        <a class="btn btn-danger" asp-controller="User" asp-action="Delete" asp-route-id="@Model.Id">Delete</a>
 
-
-        @*</form>*@
 
     </div>
 </div>
@@ -42,15 +65,18 @@
 
 @section scripts
 {
+<script src="~/vendor/select2/dist/js/select2.min.js"></script>
 <script>
     $(document).ready(function () {
+        //$('.select2').select2();
+
         $(".collapse-item").click(function() {
             $(this).addClass("active");
-            
+
         });
-        
+
         if (!$("#collapseUsers").hasClass("show")) {
-            $("#collapseUsers").addClass("show");   
+            $("#collapseUsers").addClass("show");
         }
 
     });
