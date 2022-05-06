@@ -15,7 +15,6 @@ C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\01. Core\PhoneBook.Cor
 C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Debug\net6.0\PhoneBook.Core.Contracts.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\PhoneBook.Core.Contracts.deps.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\PhoneBook.Core.Contracts.dll
-C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\ref\PhoneBook.Core.Contracts.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\PhoneBook.Core.Contracts.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\PhoneBook.Core.Entities.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\bin\Debug\net6.0\PhoneBook.Core.Entities.pdb
@@ -28,3 +27,4 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contr
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Debug\net6.0\PhoneBook.Core.Contracts.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Debug\net6.0\ref\PhoneBook.Core.Contracts.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Debug\net6.0\PhoneBook.Core.Contracts.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\01. Core\PhoneBook.Core.Contracts\obj\Debug\net6.0\refint\PhoneBook.Core.Contracts.dll

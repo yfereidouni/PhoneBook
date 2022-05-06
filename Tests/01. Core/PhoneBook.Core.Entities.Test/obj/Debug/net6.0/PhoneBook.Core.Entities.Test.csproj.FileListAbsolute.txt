@@ -106,7 +106,6 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entitie
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\PhoneBook.Core.Entities.Test.deps.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\PhoneBook.Core.Entities.Test.runtimeconfig.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\PhoneBook.Core.Entities.Test.dll
-C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\ref\PhoneBook.Core.Entities.Test.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\PhoneBook.Core.Entities.Test.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\Microsoft.VisualStudio.CodeCoverage.Shim.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\bin\Debug\net6.0\Microsoft.TestPlatform.CoreUtilities.dll
@@ -195,3 +194,5 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entitie
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\obj\Debug\net6.0\ref\PhoneBook.Core.Entities.Test.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\obj\Debug\net6.0\PhoneBook.Core.Entities.Test.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\obj\Debug\net6.0\PhoneBook.Core.Entities.Test.genruntimeconfig.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\obj\Debug\net6.0\PhoneBook.Core.Entities.Test.csproj.AssemblyReference.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Tests\01. Core\PhoneBook.Core.Entities.Test\obj\Debug\net6.0\refint\PhoneBook.Core.Entities.Test.dll

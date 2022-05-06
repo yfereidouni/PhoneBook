@@ -17,7 +17,6 @@ C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\02. Services\PhoneBook
 C:\Users\yasser.fereidouni\Source\Repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Debug\net6.0\PhoneBook.Services.ApplicationServices.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\PhoneBook.Services.ApplicationServices.deps.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\PhoneBook.Services.ApplicationServices.dll
-C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\ref\PhoneBook.Services.ApplicationServices.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\PhoneBook.Services.ApplicationServices.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\PhoneBook.Core.Contracts.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\bin\Debug\net6.0\PhoneBook.Core.Entities.dll
@@ -32,3 +31,4 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Servic
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Debug\net6.0\PhoneBook.Services.ApplicationServices.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Debug\net6.0\ref\PhoneBook.Services.ApplicationServices.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Debug\net6.0\PhoneBook.Services.ApplicationServices.pdb
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\02. Services\PhoneBook.Services.ApplicationServices\obj\Debug\net6.0\refint\PhoneBook.Services.ApplicationServices.dll

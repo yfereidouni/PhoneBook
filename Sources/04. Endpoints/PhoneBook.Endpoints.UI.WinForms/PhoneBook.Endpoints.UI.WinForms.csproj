@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWindowsForms>true</UseWindowsForms>
+    <ImplicitUsings>enable</ImplicitUsings>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\01. Core\PhoneBook.Core.Contracts\PhoneBook.Core.Contracts.csproj" />
+    <ProjectReference Include="..\..\01. Core\PhoneBook.Core.Entities\PhoneBook.Core.Entities.csproj" />
+    <ProjectReference Include="..\..\02. Services\PhoneBook.Services.ApplicationServices\PhoneBook.Services.ApplicationServices.csproj" />
+    <ProjectReference Include="..\..\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\PhoneBook.Infrastructures.DAL.EF.csproj" />
+    <ProjectReference Include="..\..\03. Infrastructures\PhoneBook.Infrastructures.DAL.Fake\PhoneBook.Infrastructures.DAL.Fake.csproj" />
+  </ItemGroup>
+
+</Project>

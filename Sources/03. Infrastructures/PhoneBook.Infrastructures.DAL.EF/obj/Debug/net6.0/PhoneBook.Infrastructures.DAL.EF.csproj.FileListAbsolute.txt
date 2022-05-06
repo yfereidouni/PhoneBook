@@ -20,7 +20,6 @@ C:\Users\yasser.fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\Ph
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.deps.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.runtimeconfig.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.dll
-C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\ref\PhoneBook.Infrastructures.DAL.EF.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Core.Contracts.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\bin\Debug\net6.0\PhoneBook.Core.Entities.dll
@@ -36,3 +35,4 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\obj\Debug\net6.0\ref\PhoneBook.Infrastructures.DAL.EF.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\obj\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\obj\Debug\net6.0\PhoneBook.Infrastructures.DAL.EF.genruntimeconfig.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\03. Infrastructures\PhoneBook.Infrastructures.DAL.EF\obj\Debug\net6.0\refint\PhoneBook.Infrastructures.DAL.EF.dll

@@ -183,7 +183,6 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpo
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.deps.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.runtimeconfig.json
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.dll
-C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\ref\PhoneBook.Endpoints.UI.MVC.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\Humanizer.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
@@ -322,3 +321,4 @@ C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpo
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\ref\PhoneBook.Endpoints.UI.MVC.dll
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.pdb
 C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\PhoneBook.Endpoints.UI.MVC.genruntimeconfig.cache
+C:\Users\Fereidouni\source\repos\PhoneBook\Sources\04. Endpoints\PhoneBook.Endpoints.UI.MVC\obj\Debug\net6.0\refint\PhoneBook.Endpoints.UI.MVC.dll
